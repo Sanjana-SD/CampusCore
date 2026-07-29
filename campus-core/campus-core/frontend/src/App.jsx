@@ -5,6 +5,7 @@ import { api } from './utils/api';
 // Components
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import { CircuitBackground, PageTransition } from './components/AnimationWrappers';
 
 // Pages
 import Login from './pages/Login';
@@ -144,8 +145,18 @@ export default function App() {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-slate-950 text-slate-400">
-        <RefreshCw className="h-6 w-6 animate-spin text-blue-500" />
+      <div className="flex min-h-screen flex-col items-center justify-center bg-slate-950 text-slate-400 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-25"></div>
+        <div className="relative z-10 flex flex-col items-center space-y-4">
+          <div className="relative flex items-center justify-center h-16 w-16">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500/20 opacity-75"></span>
+            <RefreshCw className="h-8 w-8 animate-spin text-blue-500 relative" />
+          </div>
+          <div className="text-center">
+            <h2 className="text-lg font-black tracking-widest bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent uppercase">CampusCore</h2>
+            <p className="text-xs text-slate-500 uppercase tracking-widest font-semibold mt-1">Restoring Secure Session</p>
+          </div>
+        </div>
       </div>
     );
   }
@@ -191,16 +202,22 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col relative">
+    <div className="min-h-screen flex flex-col relative overflow-hidden bg-slate-950 premium-gradient">
+      {/* CampusCore Signature Circuit Background */}
+      <CircuitBackground />
+
+      {/* Decorative background grid overlays */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-35"></div>
+
       {/* Toast Alert overlay */}
       {toast.show && (
-        <div className="fixed top-6 right-6 z-50 glass-card bg-slate-900 border-blue-500/30 p-4 rounded-xl shadow-2xl flex items-start space-x-3 w-80 animate-slide-in">
-          <div className="p-2 bg-blue-500/20 text-blue-400 rounded-lg shrink-0">
+        <div className="fixed top-6 right-6 z-50 glass-card bg-slate-950/80 border-blue-500/30 p-4 rounded-xl shadow-2xl flex items-start space-x-3 w-80 animate-slide-in gradient-border">
+          <div className="p-2 bg-blue-500/20 text-blue-450 rounded-lg shrink-0">
             <Bell className="h-4.5 w-4.5" />
           </div>
           <div>
             <h4 className="font-bold text-xs text-slate-100 uppercase tracking-wide">{toast.title}</h4>
-            <p className="text-xs text-slate-350 mt-1 leading-relaxed">{toast.message}</p>
+            <p className="text-xs text-slate-400 mt-1 leading-relaxed">{toast.message}</p>
           </div>
         </div>
       )}
@@ -209,13 +226,16 @@ export default function App() {
       <Navbar user={user} socketConnected={socketConnected} onLogout={handleLogout} />
 
       {/* Sidebar & Dashboard layouts */}
-      <div className="flex-1 flex max-w-7xl w-full mx-auto p-4 overflow-hidden gap-4">
+      <div className="flex-1 flex max-w-7xl w-full mx-auto p-4 overflow-hidden gap-4 relative z-10">
         <Sidebar role={user.role} currentTab={currentTab} setCurrentTab={setCurrentTab} />
         
-        <main className="flex-1 overflow-y-auto p-4 bg-slate-900/10 rounded-2xl border border-slate-900/30">
-          {renderContent()}
+        <main className="flex-1 overflow-y-auto p-4 bg-slate-950/40 rounded-2xl border border-slate-900/60 backdrop-blur-sm">
+          <PageTransition key={currentTab}>
+            {renderContent()}
+          </PageTransition>
         </main>
       </div>
     </div>
   );
 }
+

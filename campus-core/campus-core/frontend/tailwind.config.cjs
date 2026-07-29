@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
       colors: {
         brand: {
           50: '#f5f7fa',
@@ -15,7 +18,7 @@ module.exports = {
           700: '#1e40af',
           900: '#0f172a',
         }
-      }
+      },
     },
   },
   plugins: [],
