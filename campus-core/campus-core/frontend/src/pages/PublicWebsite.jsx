@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { 
-  Building, BookOpen, Users, Calendar, Phone, Award, LogIn, Info, ShieldCheck, Mail, MapPin, Search, ArrowRight, Star, Sparkles, Check, ChevronRight, GraduationCap, Compass, Briefcase, Library, Globe, Layers, Target
+  Building, BookOpen, Users, Calendar, Phone, Award, LogIn, Info, ShieldCheck, Mail, MapPin, Search, ArrowRight, Star, Sparkles, Check, Compass, Briefcase, Library, Globe, Layers, Target
 } from 'lucide-react';
 import { api } from '../utils/api';
 import Login from './Login';
@@ -11,8 +11,6 @@ import {
   StaggerContainer,
   StaggerItem,
   CountUp,
-  FloatingCard,
-  AnimatedSkillBar,
   AnimatedGradientText,
   CircuitBackground,
   PageTransition,
@@ -110,20 +108,20 @@ export default function PublicWebsite({ onLoginSuccess }) {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-35"></div>
       
       {/* Glowing blur points */}
-      <div className="absolute top-0 right-1/4 w-[400px] h-[400px] rounded-full bg-blue-500/10 blur-[130px] pointer-events-none"></div>
-      <div className="absolute bottom-10 left-1/4 w-[450px] h-[450px] rounded-full bg-indigo-500/8 blur-[130px] pointer-events-none"></div>
+      <div className="absolute top-0 right-1/4 w-[400px] h-[400px] rounded-full bg-orange-500/12 blur-[130px] pointer-events-none"></div>
+      <div className="absolute bottom-10 left-1/4 w-[450px] h-[450px] rounded-full bg-fuchsia-500/10 blur-[130px] pointer-events-none"></div>
 
       {/* College Website Header/Navbar */}
-      <header className="glass-nav sticky top-0 z-40 w-full px-6 py-4 flex items-center justify-between bg-slate-950/40 backdrop-blur-xl">
+      <header className="glass-nav sticky top-0 z-40 w-full px-6 py-4 flex items-center justify-between bg-slate-950/35 backdrop-blur-2xl shadow-[0_18px_80px_-50px_rgba(0,0,0,0.7)]">
         <div className="flex items-center space-x-3.5">
-          <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center font-extrabold text-xl text-white shadow-lg shadow-blue-500/25 border border-blue-400/20 gradient-border">
+          <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-orange-500 via-fuchsia-500 to-cyan-500 flex items-center justify-center font-extrabold text-xl text-white shadow-lg shadow-fuchsia-500/20 border border-fuchsia-500/20 gradient-border">
             CC
           </div>
           <div>
             <h1 className="text-xl font-extrabold tracking-tight gradient-text-animated">
               CampusCore
             </h1>
-            <p className="text-[9px] text-slate-400 font-bold uppercase tracking-widest leading-none mt-0.5">Institute of Technology</p>
+            <p className="text-[9px] text-slate-300 font-bold uppercase tracking-widest leading-none mt-0.5">Institute of Technology</p>
           </div>
         </div>
 
@@ -136,9 +134,9 @@ export default function PublicWebsite({ onLoginSuccess }) {
         <div>
           <button
             onClick={() => setActiveTab('login')}
-            className={`btn-press btn-glow flex items-center space-x-2 px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wide transition-all cursor-pointer ${
+            className={`btn-press btn-glow flex items-center space-x-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wide transition-all cursor-pointer ${
               activeTab === 'login'
-                ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/20'
+                ? 'bg-gradient-to-r from-orange-500 via-fuchsia-500 to-cyan-500 text-white shadow-lg shadow-fuchsia-500/20'
                 : 'bg-slate-950/70 border border-slate-800 hover:border-slate-700 hover:bg-slate-900/60 text-slate-200 hover:text-white'
             }`}
           >
@@ -158,20 +156,26 @@ export default function PublicWebsite({ onLoginSuccess }) {
         {activeTab === 'home' && (
           <PageTransition className="space-y-16">
             {/* Split Hero Layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center py-6">
-              {/* Left Column: Premium Value Pitch */}
-              <FadeInOnScroll className="lg:col-span-7 space-y-6 text-left" direction="left">
-                <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-blue-600/10 text-blue-400 border border-blue-500/20 text-xs font-semibold">
-                  <Sparkles className="h-3.5 w-3.5" />
+            <div className="relative overflow-hidden py-12">
+              <div className="absolute inset-0 pointer-events-none">
+                <div className="absolute left-[-5%] top-10 h-[520px] w-[520px] rounded-full bg-orange-500/12 blur-[140px]" />
+                <div className="absolute right-0 top-24 h-[420px] w-[420px] rounded-full bg-fuchsia-500/12 blur-[140px]" />
+                <div className="absolute left-16 bottom-6 h-[140px] w-[140px] rotate-45 rounded-3xl bg-white/8 blur-2xl" />
+                <div className="absolute right-16 bottom-24 h-[120px] w-[120px] rotate-45 rounded-3xl bg-slate-100/6 blur-2xl" />
+              </div>
+
+              <FadeInOnScroll className="relative z-10 max-w-3xl space-y-6 text-left" direction="left">
+                <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-orange-500/10 text-orange-200 border border-orange-500/20 text-xs font-semibold">
+                  <Sparkles className="h-3.5 w-3.5 text-orange-300" />
                   <span>Integrated Smart Campus System</span>
                 </div>
                 
-                <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1]">
+                <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.05]">
                   Empowering Academics <br />
                   Through <AnimatedGradientText>AI Mentorship</AnimatedGradientText>
                 </h2>
                 
-                <p className="text-slate-400 text-sm md:text-base leading-relaxed max-w-xl">
+                <p className="text-slate-300 text-sm md:text-base leading-relaxed max-w-xl">
                   Welcome to CampusCore, a unified educational ecosystem. Connect with advanced gate sensors, view real-time warnings, study curriculum modules, and map your industry readiness using our AI-driven mentor.
                 </p>
 
@@ -196,89 +200,18 @@ export default function PublicWebsite({ onLoginSuccess }) {
                 <div className="pt-4 flex flex-wrap gap-4">
                   <button 
                     onClick={() => setActiveTab('login')}
-                    className="btn-press px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-xs uppercase tracking-wide transition-all shadow-lg shadow-blue-500/20 flex items-center space-x-2 cursor-pointer"
+                    className="btn-press px-7 py-3 bg-gradient-to-r from-orange-500 via-fuchsia-500 to-cyan-500 text-white font-bold rounded-full text-xs uppercase tracking-wide transition-all shadow-2xl shadow-fuchsia-500/20 flex items-center space-x-2 cursor-pointer"
                   >
                     <span>Enter Student Portal</span>
                     <ArrowRight className="h-4 w-4" />
                   </button>
                   <button 
                     onClick={() => setActiveTab('about')}
-                    className="btn-press btn-glow px-6 py-3 bg-slate-950/60 border border-slate-800 hover:border-slate-700 hover:bg-slate-900/40 text-slate-300 font-bold rounded-xl text-xs uppercase tracking-wide transition-all cursor-pointer"
+                    className="btn-press btn-glow px-7 py-3 bg-slate-950/70 border border-slate-800 hover:border-slate-700 hover:bg-slate-900/70 text-slate-200 font-bold rounded-full text-xs uppercase tracking-wide transition-all cursor-pointer"
                   >
                     About The College
                   </button>
                 </div>
-              </FadeInOnScroll>
-
-              {/* Right Column: Premium AI Mentor Mock Preview */}
-              <FadeInOnScroll className="lg:col-span-5 relative w-full max-w-md mx-auto" direction="right" delay={0.2}>
-                {/* Deep background glow behind card */}
-                <div className="absolute -inset-8 rounded-3xl bg-gradient-to-r from-blue-600/15 via-indigo-600/10 to-purple-600/15 blur-2xl pointer-events-none"></div>
-                
-                {/* Glowing border ring */}
-                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-500 to-indigo-500 opacity-20 blur-xl"></div>
-                
-                {/* Floating Mock UI */}
-                <FloatingCard className="relative">
-                  <div className="relative glass-card rounded-2xl p-6 bg-slate-950/70 border border-slate-800/60 shadow-2xl space-y-5 gradient-border">
-                    <div className="flex items-center justify-between border-b border-slate-900 pb-3">
-                      <div className="flex items-center space-x-2">
-                        <Compass className="h-4.5 w-4.5 text-indigo-400" />
-                        <span className="text-xs font-bold text-slate-200">CampusCore AI Mentor Mock</span>
-                      </div>
-                      <span className="px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 text-[9px] font-mono font-bold uppercase">
-                        Classified
-                      </span>
-                    </div>
-
-                    {/* Mock Score Indicator */}
-                    <div className="flex items-center justify-between p-4 bg-slate-900/40 border border-slate-900/60 rounded-xl">
-                      <div className="space-y-1">
-                        <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Performance Index</span>
-                        <div className="text-xl font-black text-slate-100 flex items-baseline">
-                          <CountUp end={82} duration={2} className="" />
-                          <span className="text-[10px] text-slate-500 font-normal ml-0.5">/100</span>
-                        </div>
-                      </div>
-                      <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-bold text-[9px] uppercase tracking-wide">
-                        Advanced Track
-                      </span>
-                    </div>
-
-                    {/* Skills preview bar — animated fills */}
-                    <div className="space-y-3">
-                      <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Skill Gap Analysis</div>
-                      {[
-                        { label: 'React JS', match: 90, color: 'bg-blue-500' },
-                        { label: 'Node / Express', match: 80, color: 'bg-indigo-500' },
-                        { label: 'Cloud Deployment', match: 40, color: 'bg-rose-500' }
-                      ].map((skill, idx) => (
-                        <div key={idx} className="space-y-1 text-[11px]">
-                          <div className="flex justify-between font-semibold">
-                            <span className="text-slate-350">{skill.label}</span>
-                            <CountUp end={skill.match} suffix="%" duration={1.5} className="text-slate-450" />
-                          </div>
-                          <AnimatedSkillBar percentage={skill.match} colorClass={skill.color} />
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Roadmap Timeline preview */}
-                    <div className="space-y-2.5 border-t border-slate-900 pt-3.5">
-                      <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Timeline Checkpoint</div>
-                      <div className="relative border-l border-slate-800 ml-2 pl-4 space-y-2">
-                        <div className="relative text-[11px] text-slate-300">
-                          <span className="absolute -left-[20px] top-1.5 h-2 w-2 rounded-full bg-blue-500"></span>
-                          <span>Basic Programming Foundations</span>
-                        </div>
-                        <div className="relative text-[11px] text-slate-450">
-                          <span className="absolute -left-[20px] top-1.5 h-2 w-2 rounded-full bg-slate-800"></span>
-                          <span>Advanced System Architecture</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </FloatingCard>
               </FadeInOnScroll>
             </div>
 
@@ -314,15 +247,18 @@ export default function PublicWebsite({ onLoginSuccess }) {
             </div>
 
             {/* Stats Roster — Animated Count Up */}
-            <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 pt-4" staggerDelay={0.1}>
-              {[
-                { count: '100%', label: 'Supabase Database', desc: 'Secure cloud integration' },
-                { count: '94.2%', label: 'Placement Records', desc: 'Highest in the region' },
-                { count: '150+', label: 'Expert Faculty', desc: 'Industry-active lectures' },
-                { count: '100%', label: 'MERN Architecture', desc: 'Blazing fast loading speeds' }
-              ].map((stat, idx) => (
-                <StaggerItem key={idx}>
-                  <div className="glass-card rounded-2xl p-6 border border-slate-900 bg-slate-900/10 text-center space-y-1.5 hover-glow transition-all">
+            <div className="relative rounded-3xl overflow-hidden pt-10">
+              <div className="absolute -top-10 left-10 h-52 w-52 rounded-full bg-fuchsia-500/12 blur-[110px]" />
+              <div className="absolute top-0 right-10 h-36 w-36 rounded-full bg-cyan-400/10 blur-[100px]" />
+              <StaggerContainer className="relative grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 pt-4" staggerDelay={0.1}>
+                {[
+                  { count: '100%', label: 'Supabase Database', desc: 'Secure cloud integration' },
+                  { count: '94.2%', label: 'Placement Records', desc: 'Highest in the region' },
+                  { count: '150+', label: 'Expert Faculty', desc: 'Industry-active lectures' },
+                  { count: '100%', label: 'MERN Architecture', desc: 'Blazing fast loading speeds' }
+                ].map((stat, idx) => (
+                  <StaggerItem key={idx}>
+                    <div className="glass-card rounded-2xl p-6 border border-slate-900 bg-slate-900/10 text-center space-y-1.5 hover-glow transition-all">
                     <div className="text-2xl font-black gradient-text-animated">
                       <CountUp 
                         end={stat.count} 
