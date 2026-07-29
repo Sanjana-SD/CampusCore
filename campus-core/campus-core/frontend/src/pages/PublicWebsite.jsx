@@ -5,6 +5,7 @@ import {
 import { api } from '../utils/api';
 import Login from './Login';
 import LibraryPage from './LibraryPage';
+import HeroBackground from '../components/HeroBackground';
 import EmptyState from '../components/EmptyState';
 import {
   FadeInOnScroll,
@@ -111,109 +112,135 @@ export default function PublicWebsite({ onLoginSuccess }) {
       <div className="absolute top-0 right-1/4 w-[400px] h-[400px] rounded-full bg-orange-500/12 blur-[130px] pointer-events-none"></div>
       <div className="absolute bottom-10 left-1/4 w-[450px] h-[450px] rounded-full bg-fuchsia-500/10 blur-[130px] pointer-events-none"></div>
 
-      {/* College Website Header/Navbar */}
-      <header className="glass-nav sticky top-0 z-40 w-full px-6 py-4 flex items-center justify-between bg-slate-950/35 backdrop-blur-2xl shadow-[0_18px_80px_-50px_rgba(0,0,0,0.7)]">
-        <div className="flex items-center space-x-3.5">
-          <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-orange-500 via-fuchsia-500 to-cyan-500 flex items-center justify-center font-extrabold text-xl text-white shadow-lg shadow-fuchsia-500/20 border border-fuchsia-500/20 gradient-border">
-            CC
+      {activeTab !== 'home' && (
+        <>
+          {/* College Website Header/Navbar */}
+          <header className="glass-nav sticky top-0 z-40 w-full px-6 py-4 flex items-center justify-between bg-slate-950/35 backdrop-blur-2xl shadow-[0_18px_80px_-50px_rgba(0,0,0,0.7)]">
+            <div className="flex items-center space-x-3.5">
+              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-orange-500 via-fuchsia-500 to-cyan-500 flex items-center justify-center font-extrabold text-xl text-white shadow-lg shadow-fuchsia-500/20 border border-fuchsia-500/20 gradient-border">
+                CC
+              </div>
+              <div>
+                <h1 className="text-xl font-extrabold tracking-tight gradient-text-animated">
+                  CampusCore
+                </h1>
+                <p className="text-[9px] text-slate-300 font-bold uppercase tracking-widest leading-none mt-0.5">Institute of Technology</p>
+              </div>
+            </div>
+
+            {/* Desktop Navbar */}
+            <nav className="hidden lg:flex items-center space-x-1">
+              {navItems.map(item => renderNavItem(item.id, item.label, item.icon))}
+            </nav>
+
+            {/* Portal CTA */}
+            <div>
+              <button
+                onClick={() => setActiveTab('login')}
+                className={`btn-press btn-glow flex items-center space-x-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wide transition-all cursor-pointer ${
+                  activeTab === 'login'
+                    ? 'bg-gradient-to-r from-orange-500 via-fuchsia-500 to-cyan-500 text-white shadow-lg shadow-fuchsia-500/20'
+                    : 'bg-slate-950/70 border border-slate-800 hover:border-slate-700 hover:bg-slate-900/60 text-slate-200 hover:text-white'
+                }`}
+              >
+                <LogIn className="h-4 w-4 shrink-0" />
+                <span>Portal Login</span>
+              </button>
+            </div>
+          </header>
+
+          {/* Mobile Nav Bar */}
+          <div className="lg:hidden flex overflow-x-auto space-x-1 bg-slate-950/60 backdrop-blur-md border-b border-slate-900 p-2.5 scrollbar-none">
+            {navItems.map(item => renderNavItem(item.id, item.label, item.icon, true))}
           </div>
-          <div>
-            <h1 className="text-xl font-extrabold tracking-tight gradient-text-animated">
-              CampusCore
-            </h1>
-            <p className="text-[9px] text-slate-300 font-bold uppercase tracking-widest leading-none mt-0.5">Institute of Technology</p>
-          </div>
-        </div>
-
-        {/* Desktop Navbar */}
-        <nav className="hidden lg:flex items-center space-x-1">
-          {navItems.map(item => renderNavItem(item.id, item.label, item.icon))}
-        </nav>
-
-        {/* Portal CTA */}
-        <div>
-          <button
-            onClick={() => setActiveTab('login')}
-            className={`btn-press btn-glow flex items-center space-x-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wide transition-all cursor-pointer ${
-              activeTab === 'login'
-                ? 'bg-gradient-to-r from-orange-500 via-fuchsia-500 to-cyan-500 text-white shadow-lg shadow-fuchsia-500/20'
-                : 'bg-slate-950/70 border border-slate-800 hover:border-slate-700 hover:bg-slate-900/60 text-slate-200 hover:text-white'
-            }`}
-          >
-            <LogIn className="h-4 w-4 shrink-0" />
-            <span>Portal Login</span>
-          </button>
-        </div>
-      </header>
-
-      {/* Mobile Nav Bar */}
-      <div className="lg:hidden flex overflow-x-auto space-x-1 bg-slate-950/60 backdrop-blur-md border-b border-slate-900 p-2.5 scrollbar-none">
-        {navItems.map(item => renderNavItem(item.id, item.label, item.icon, true))}
-      </div>
+        </>
+      )}
 
       {/* Content wrapper */}
       <main className="flex-1 max-w-7xl w-full mx-auto p-6 md:p-8 relative z-10 overflow-y-auto">
         {activeTab === 'home' && (
           <PageTransition className="space-y-16">
-            {/* Split Hero Layout */}
-            <div className="relative overflow-hidden py-12">
-              <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute left-[-5%] top-10 h-[520px] w-[520px] rounded-full bg-orange-500/12 blur-[140px]" />
-                <div className="absolute right-0 top-24 h-[420px] w-[420px] rounded-full bg-fuchsia-500/12 blur-[140px]" />
-                <div className="absolute left-16 bottom-6 h-[140px] w-[140px] rotate-45 rounded-3xl bg-white/8 blur-2xl" />
-                <div className="absolute right-16 bottom-24 h-[120px] w-[120px] rotate-45 rounded-3xl bg-slate-100/6 blur-2xl" />
-              </div>
+            <HeroBackground className="mx-auto w-full max-w-[1160px]">
+              <div className="relative z-10 space-y-10">
+                <nav className="hero-hero-nav flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="h-11 w-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-sm font-bold text-white shadow-lg shadow-orange-500/10">
+                      CC
+                    </div>
+                    <span className="text-sm font-semibold text-white">CampusCore</span>
+                  </div>
 
-              <FadeInOnScroll className="relative z-10 max-w-3xl space-y-6 text-left" direction="left">
-                <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-orange-500/10 text-orange-200 border border-orange-500/20 text-xs font-semibold">
-                  <Sparkles className="h-3.5 w-3.5 text-orange-300" />
-                  <span>Integrated Smart Campus System</span>
-                </div>
-                
-                <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.05]">
-                  Empowering Academics <br />
-                  Through <AnimatedGradientText>AI Mentorship</AnimatedGradientText>
-                </h2>
-                
-                <p className="text-slate-300 text-sm md:text-base leading-relaxed max-w-xl">
-                  Welcome to CampusCore, a unified educational ecosystem. Connect with advanced gate sensors, view real-time warnings, study curriculum modules, and map your industry readiness using our AI-driven mentor.
-                </p>
+                  <div className="hidden flex-1 items-center justify-center gap-8 text-sm font-medium text-slate-300 md:flex">
+                    {navItems.map((item) => (
+                      <button
+                        key={item.id}
+                        onClick={() => { setActiveTab(item.id); setSearchQuery(''); }}
+                        className="transition-colors duration-200 hover:text-white"
+                      >
+                        {item.label}
+                      </button>
+                    ))}
+                  </div>
 
-                <StaggerContainer className="space-y-3 pt-2" staggerDelay={0.08}>
-                  {[
-                    'Automatic RFID gate check-ins & duration tracking',
-                    'Parent notification alerts via Express cron checkouts',
-                    'NLP skill gap parser & performance roadmaps',
-                    'Integrated library ledgers and online assessments'
-                  ].map((item, idx) => (
-                    <StaggerItem key={idx}>
-                      <div className="flex items-center space-x-2.5 text-xs text-slate-350">
-                        <span className="h-4.5 w-4.5 rounded-full bg-emerald-500/15 border border-emerald-500/20 text-emerald-450 flex items-center justify-center shrink-0">
-                          <Check className="h-3 w-3" />
+                  <div className="flex flex-wrap items-center justify-end gap-3 text-sm">
+                    <button
+                      onClick={() => setActiveTab('login')}
+                      className="text-slate-300 transition-colors duration-200 hover:text-white"
+                    >
+                      Log in
+                    </button>
+                    <button
+                      onClick={() => setActiveTab('login')}
+                      className="btn-press rounded-full border border-white/30 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+                    >
+                      Portal Login
+                    </button>
+                  </div>
+                </nav>
+
+                <div className="relative mx-auto max-w-3xl space-y-8 text-center">
+                  <div className="inline-flex items-center justify-center rounded-full border border-orange-400/20 bg-orange-500/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-orange-200">
+                    <Sparkles className="h-3.5 w-3.5 text-orange-300" />
+                    <span>Integrated Smart Campus System</span>
+                  </div>
+
+                  <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+                    Empowering Academics <br />
+                    Through <AnimatedGradientText>AI Mentorship</AnimatedGradientText>
+                  </h1>
+
+                  <p className="mx-auto max-w-2xl text-base text-slate-300/90 leading-relaxed sm:text-lg">
+                    Welcome to CampusCore, a unified educational ecosystem. Connect with advanced gate sensors, view real-time warnings, study curriculum modules, and map your industry readiness using our AI-driven mentor.
+                  </p>
+
+                  <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                    <button
+                      onClick={() => setActiveTab('login')}
+                      className="btn-press rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-fuchsia-500/15 transition hover:bg-white/15"
+                    >
+                      Enter Student Portal
+                    </button>
+                    <button
+                      onClick={() => setActiveTab('about')}
+                      className="btn-press rounded-full border border-white/30 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:border-white/50 hover:bg-white/5"
+                    >
+                      About The College
+                    </button>
+                  </div>
+
+                  <div className="space-y-4">
+                    <p className="text-sm text-slate-400/90">Trusted by 400+ institutions</p>
+                    <div className="flex flex-wrap justify-center gap-3">
+                      {['Brand 1', 'Brand 2', 'Brand 3', 'Brand 4'].map((brand) => (
+                        <span key={brand} className="rounded-full border border-white/20 px-4 py-2 text-xs uppercase tracking-[0.22em] text-slate-200/80">
+                          {brand}
                         </span>
-                        <span>{item}</span>
-                      </div>
-                    </StaggerItem>
-                  ))}
-                </StaggerContainer>
-
-                <div className="pt-4 flex flex-wrap gap-4">
-                  <button 
-                    onClick={() => setActiveTab('login')}
-                    className="btn-press px-7 py-3 bg-gradient-to-r from-orange-500 via-fuchsia-500 to-cyan-500 text-white font-bold rounded-full text-xs uppercase tracking-wide transition-all shadow-2xl shadow-fuchsia-500/20 flex items-center space-x-2 cursor-pointer"
-                  >
-                    <span>Enter Student Portal</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </button>
-                  <button 
-                    onClick={() => setActiveTab('about')}
-                    className="btn-press btn-glow px-7 py-3 bg-slate-950/70 border border-slate-800 hover:border-slate-700 hover:bg-slate-900/70 text-slate-200 font-bold rounded-full text-xs uppercase tracking-wide transition-all cursor-pointer"
-                  >
-                    About The College
-                  </button>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              </FadeInOnScroll>
-            </div>
+              </div>
+            </HeroBackground>
 
             {/* Core Features Pillars Grid */}
             <div className="space-y-6 pt-6">
