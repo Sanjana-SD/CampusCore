@@ -16,7 +16,7 @@ export default function Navbar({ user, socketConnected, onLogout }) {
   };
 
   return (
-    <nav className="glass-nav sticky top-0 z-40 w-full px-6 py-4 flex items-center justify-between bg-slate-950/40 backdrop-blur-xl">
+    <nav className="glass-nav sticky top-0 z-40 w-full px-6 py-4 flex items-center justify-between">
       <div className="flex items-center space-x-3">
         <motion.div 
           className="h-9 w-9 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-blue-500/20 gradient-border"
@@ -38,7 +38,7 @@ export default function Navbar({ user, socketConnected, onLogout }) {
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="flex items-center space-x-2 bg-slate-950/70 px-3 py-1.5 rounded-full border border-slate-900 text-xs"
+          className="flex items-center space-x-2 bg-white/80 px-3 py-1.5 rounded-full border border-gray-100 text-xs"
         >
           {socketConnected ? (
             <>
@@ -60,14 +60,14 @@ export default function Navbar({ user, socketConnected, onLogout }) {
         {/* User Card */}
         <div className="flex items-center space-x-3">
           <div className="text-right">
-            <p className="text-sm font-bold text-slate-200">{user?.username}</p>
-            <p className="text-[10px] text-blue-405 font-bold uppercase tracking-wider">{getRoleLabel(user?.role)}</p>
+            <p className="text-sm font-bold text-slate-800">{user?.username}</p>
+            <p className="text-[10px] text-blue-600 font-bold uppercase tracking-wider">{getRoleLabel(user?.role)}</p>
           </div>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={onLogout}
-            className="p-2 rounded-lg bg-slate-900 border border-slate-800 hover:border-rose-500/30 hover:bg-rose-950/20 hover:text-rose-400 transition-all text-slate-400 cursor-pointer btn-press"
+            className="p-2 rounded-lg bg-white border border-gray-100 hover:border-rose-200 transition-all text-slate-700 cursor-pointer btn-press"
             title="Log Out"
           >
             <LogOut className="h-4.5 w-4.5" />

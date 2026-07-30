@@ -56,11 +56,11 @@ export default function LibraryPage() {
             <Library className="h-3.5 w-3.5" />
             <span>Campus Library System</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white leading-tight">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight card-title leading-tight">
             Your Gateway to{' '}
             <AnimatedGradientText>Knowledge</AnimatedGradientText>
           </h2>
-          <p className="text-sm text-slate-400 leading-relaxed max-w-lg mx-auto">
+          <p className="text-sm text-muted leading-relaxed max-w-lg mx-auto">
             Access the complete CampusCore library ecosystem — from physical book catalogs to digital archives, 
             study space reservations, and AI-powered reading recommendations.
           </p>
@@ -73,12 +73,12 @@ export default function LibraryPage() {
           const Icon = feature.icon;
           return (
             <StaggerItem key={idx}>
-              <div className="glass-card rounded-2xl p-6 bg-slate-900/10 border border-slate-900 hover-scale hover-glow transition-all flex flex-col items-start space-y-4 h-full">
+              <div className="glass-card rounded-2xl p-6 border hover-scale hover-glow transition-all flex flex-col items-start space-y-4 h-full">
                 <div className={`p-3 rounded-xl ${feature.color} border border-white/5`}>
                   <Icon className="h-5 w-5" />
                 </div>
-                <h4 className="text-sm font-bold text-slate-200">{feature.title}</h4>
-                <p className="text-xs text-slate-400 leading-relaxed">{feature.description}</p>
+                <h4 className="text-sm font-bold card-title">{feature.title}</h4>
+                <p className="text-xs text-muted leading-relaxed">{feature.description}</p>
               </div>
             </StaggerItem>
           );

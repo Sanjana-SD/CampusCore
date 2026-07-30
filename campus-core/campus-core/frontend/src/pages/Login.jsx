@@ -31,17 +31,17 @@ export default function Login({ onLoginSuccess }) {
 
       <div className="w-full max-w-md glass-card rounded-2xl p-8 shadow-2xl relative z-10">
         <div className="flex flex-col items-center mb-8">
-          <div className="h-12 w-12 rounded-xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/20 mb-3">
+          <div className="h-12 w-12 rounded-xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/20 mb-4 z-10">
             <Shield className="h-6 w-6 text-white" />
           </div>
-          <h2 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
+          <h2 className="text-2xl font-bold tracking-tight card-title">
             Welcome to CampusCore
           </h2>
-          <p className="text-xs text-slate-400 mt-1">Smart Campus Portal Access Control</p>
+          <p className="text-xs text-muted mt-1">Smart Campus Portal Access Control</p>
         </div>
 
         {error && (
-          <div className="mb-6 flex items-start space-x-2 bg-rose-950/40 border border-rose-900/50 p-4 rounded-xl text-rose-400 text-sm">
+          <div className="mb-6 flex items-start space-x-2 bg-rose-50 border border-rose-200 p-4 rounded-xl text-rose-700 text-sm">
             <AlertCircle className="h-4.5 w-4.5 shrink-0 mt-0.5" />
             <span>{error}</span>
           </div>
@@ -52,8 +52,8 @@ export default function Login({ onLoginSuccess }) {
             <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
               Username
             </label>
-            <div className="relative">
-              <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-500">
+              <div className="relative">
+              <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-muted">
                 <User className="h-4.5 w-4.5" />
               </span>
               <input
@@ -61,7 +61,7 @@ export default function Login({ onLoginSuccess }) {
                 required
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 bg-slate-900/80 border border-slate-800 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all text-sm"
+                className="w-full pl-10 pr-4 py-3 bg-white border border-gray-100 rounded-xl text-on-card placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all text-sm"
                 placeholder="Enter username (e.g. admin, student1)"
               />
             </div>
@@ -71,8 +71,8 @@ export default function Login({ onLoginSuccess }) {
             <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
               Password
             </label>
-            <div className="relative">
-              <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-500">
+              <div className="relative">
+              <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-muted">
                 <Key className="h-4.5 w-4.5" />
               </span>
               <input
@@ -80,7 +80,7 @@ export default function Login({ onLoginSuccess }) {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 bg-slate-900/80 border border-slate-800 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all text-sm"
+                className="w-full pl-10 pr-4 py-3 bg-white border border-gray-100 rounded-xl text-on-card placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all text-sm"
                 placeholder="••••••••"
               />
             </div>

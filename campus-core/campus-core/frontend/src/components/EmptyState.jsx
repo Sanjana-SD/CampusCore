@@ -17,7 +17,7 @@ export default function EmptyState({
   return (
     <div className={`flex flex-col items-center justify-center py-16 px-6 ${className}`}>
       <motion.div
-        className="h-16 w-16 rounded-2xl bg-slate-900/60 border border-slate-800/60 flex items-center justify-center mb-5"
+        className="h-16 w-16 rounded-2xl bg-white/95 border border-gray-100 flex items-center justify-center mb-5"
         animate={prefersReduced ? {} : { 
           scale: [1, 1.05, 1],
           borderColor: [
@@ -28,10 +28,10 @@ export default function EmptyState({
         }}
         transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
       >
-        <Icon className="h-7 w-7 text-slate-500" />
+        <Icon className="h-7 w-7 text-muted" />
       </motion.div>
-      <h4 className="text-sm font-bold text-slate-400 mb-1.5">{title}</h4>
-      <p className="text-xs text-slate-500 text-center max-w-xs leading-relaxed">{description}</p>
+      <h4 className="text-sm font-bold card-title mb-1.5">{title}</h4>
+      <p className="text-xs text-muted text-center max-w-xs leading-relaxed">{description}</p>
     </div>
   );
 }

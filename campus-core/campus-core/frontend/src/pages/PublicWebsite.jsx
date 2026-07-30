@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { 
   Building, BookOpen, Users, Calendar, Phone, Award, LogIn, Info, ShieldCheck, Mail, MapPin, Search, ArrowRight, Star, Sparkles, Check, Compass, Briefcase, Library, Globe, Layers, Target
 } from 'lucide-react';
+import heroImg from '../assets/hero.png';
 import { api } from '../utils/api';
 import Login from './Login';
 import LibraryPage from './LibraryPage';
-import HeroBackground from '../components/HeroBackground';
 import EmptyState from '../components/EmptyState';
 import {
   FadeInOnScroll,
@@ -91,7 +91,7 @@ export default function PublicWebsite({ onLoginSuccess }) {
         className={`nav-item-animated flex items-center space-x-2 px-4 py-2.5 rounded-xl text-xs font-semibold tracking-wide uppercase transition-all cursor-pointer ${
           isActive 
             ? 'nav-active bg-blue-600/90 text-white shadow-lg shadow-blue-500/20 border border-blue-500/30' 
-            : 'text-slate-400 hover:bg-slate-800/40 hover:text-white border border-transparent'
+                    : 'text-muted hover:bg-slate-200/40 hover:text-on-card border border-transparent'
         }`}
       >
         <Icon className="h-4 w-4 shrink-0" />
@@ -101,7 +101,7 @@ export default function PublicWebsite({ onLoginSuccess }) {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col relative overflow-hidden premium-gradient">
+    <div className="min-h-screen flex flex-col relative overflow-hidden">
       {/* CampusCore Signature Circuit Background */}
       <CircuitBackground />
 
@@ -115,7 +115,7 @@ export default function PublicWebsite({ onLoginSuccess }) {
       {activeTab !== 'home' && (
         <>
           {/* College Website Header/Navbar */}
-          <header className="glass-nav sticky top-0 z-40 w-full px-6 py-4 flex items-center justify-between bg-slate-950/35 backdrop-blur-2xl shadow-[0_18px_80px_-50px_rgba(0,0,0,0.7)]">
+          <header className="glass-nav sticky top-0 z-40 w-full px-6 py-4 flex items-center justify-between">
             <div className="flex items-center space-x-3.5">
               <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-orange-500 via-fuchsia-500 to-cyan-500 flex items-center justify-center font-extrabold text-xl text-white shadow-lg shadow-fuchsia-500/20 border border-fuchsia-500/20 gradient-border">
                 CC
@@ -124,7 +124,7 @@ export default function PublicWebsite({ onLoginSuccess }) {
                 <h1 className="text-xl font-extrabold tracking-tight gradient-text-animated">
                   CampusCore
                 </h1>
-                <p className="text-[9px] text-slate-300 font-bold uppercase tracking-widest leading-none mt-0.5">Institute of Technology</p>
+                <p className="text-[9px] text-muted font-bold uppercase tracking-widest leading-none mt-0.5">Institute of Technology</p>
               </div>
             </div>
 
@@ -140,7 +140,7 @@ export default function PublicWebsite({ onLoginSuccess }) {
                 className={`btn-press btn-glow flex items-center space-x-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wide transition-all cursor-pointer ${
                   activeTab === 'login'
                     ? 'bg-gradient-to-r from-orange-500 via-fuchsia-500 to-cyan-500 text-white shadow-lg shadow-fuchsia-500/20'
-                    : 'bg-slate-950/70 border border-slate-800 hover:border-slate-700 hover:bg-slate-900/60 text-slate-200 hover:text-white'
+                    : 'bg-white/90 border border-gray-100 hover:border-gray-200 text-on-card'
                 }`}
               >
                 <LogIn className="h-4 w-4 shrink-0" />
@@ -150,7 +150,7 @@ export default function PublicWebsite({ onLoginSuccess }) {
           </header>
 
           {/* Mobile Nav Bar */}
-          <div className="lg:hidden flex overflow-x-auto space-x-1 bg-slate-950/60 backdrop-blur-md border-b border-slate-900 p-2.5 scrollbar-none">
+          <div className="lg:hidden flex overflow-x-auto space-x-1 bg-transparent backdrop-blur-md border-b border-slate-200 p-2.5 scrollbar-none">
             {navItems.map(item => renderNavItem(item.id, item.label, item.icon, true))}
           </div>
         </>
@@ -160,92 +160,97 @@ export default function PublicWebsite({ onLoginSuccess }) {
       <main className="flex-1 max-w-7xl w-full mx-auto p-6 md:p-8 relative z-10 overflow-y-auto">
         {activeTab === 'home' && (
           <PageTransition className="space-y-16">
-            <HeroBackground className="mx-auto w-full max-w-[1160px]">
+            <section className="relative overflow-hidden rounded-[32px] border border-slate-200/50 bg-[radial-gradient(circle_at_top_left,rgba(248,250,252,0.98)_0%,rgba(252,230,227,0.88)_25%,rgba(219,234,254,0.78)_55%,rgba(239,228,255,0.78)_100%)] p-6 shadow-[0_30px_80px_rgba(15,23,42,0.12)] sm:p-8 lg:p-10">
+              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.86)_0%,rgba(255,255,255,0)_22%,rgba(255,255,255,0.5)_100%)]"></div>
               <div className="relative z-10 space-y-10">
-                <nav className="hero-hero-nav flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="h-11 w-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-sm font-bold text-white shadow-lg shadow-orange-500/10">
+                    <div className="h-12 w-12 rounded-full bg-white shadow-lg shadow-slate-400/20 border border-slate-200/70 flex items-center justify-center text-lg font-black text-on-card">
                       CC
                     </div>
-                    <span className="text-sm font-semibold text-white">CampusCore</span>
+                    <div>
+                      <p className="text-sm font-semibold uppercase tracking-[0.28em] text-on-card">CampusCore</p>
+                    </div>
                   </div>
 
-                  <div className="hidden flex-1 items-center justify-center gap-8 text-sm font-medium text-slate-300 md:flex">
+                  <div className="flex flex-wrap justify-center gap-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-muted xl:order-2 xl:flex-1 xl:justify-center">
                     {navItems.map((item) => (
                       <button
                         key={item.id}
                         onClick={() => { setActiveTab(item.id); setSearchQuery(''); }}
-                        className="transition-colors duration-200 hover:text-white"
+                        className="transition-colors duration-200 hover:text-on-card"
                       >
                         {item.label}
                       </button>
                     ))}
                   </div>
 
-                  <div className="flex flex-wrap items-center justify-end gap-3 text-sm">
-                    <button
-                      onClick={() => setActiveTab('login')}
-                      className="text-slate-300 transition-colors duration-200 hover:text-white"
-                    >
-                      Log in
-                    </button>
-                    <button
-                      onClick={() => setActiveTab('login')}
-                      className="btn-press rounded-full border border-white/30 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
-                    >
-                      Portal Login
-                    </button>
-                  </div>
-                </nav>
+                  <button onClick={() => setActiveTab('login')} className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-500 xl:ml-0">
+                    Portal Login
+                    <ArrowRight className="h-4 w-4" />
+                  </button>
+                </div>
 
-                <div className="relative mx-auto max-w-3xl space-y-8 text-center">
-                  <div className="inline-flex items-center justify-center rounded-full border border-orange-400/20 bg-orange-500/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-orange-200">
-                    <Sparkles className="h-3.5 w-3.5 text-orange-300" />
-                    <span>Integrated Smart Campus System</span>
-                  </div>
+                <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+                  <div className="relative flex justify-center">
+                    <div className="pointer-events-none absolute -left-6 top-10 h-28 w-28 rounded-3xl bg-white/70 blur-2xl opacity-80"></div>
+                    <div className="pointer-events-none absolute right-10 top-6 h-20 w-20 rounded-3xl bg-[#fbc4d4]/40 blur-2xl"></div>
+                    <div className="pointer-events-none absolute -bottom-10 left-20 h-24 w-24 rounded-3xl bg-[#dbeafe]/60 blur-2xl"></div>
 
-                  <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-                    Empowering Academics <br />
-                    Through <AnimatedGradientText>AI Mentorship</AnimatedGradientText>
-                  </h1>
+                    <div className="relative aspect-square w-full max-w-[420px] md:max-w-[520px]">
+                      <div className="absolute inset-0 rotate-45 overflow-hidden rounded-[42px] border border-white/80 bg-white/70 shadow-[0_40px_80px_rgba(15,23,42,0.12)]">
+                        <img
+                          src={heroImg}
+                          alt="CampusCore student experience"
+                          className="absolute inset-0 h-full w-full object-cover -rotate-45"
+                        />
+                      </div>
+                    </div>
 
-                  <p className="mx-auto max-w-2xl text-base text-slate-300/90 leading-relaxed sm:text-lg">
-                    Welcome to CampusCore, a unified educational ecosystem. Connect with advanced gate sensors, view real-time warnings, study curriculum modules, and map your industry readiness using our AI-driven mentor.
-                  </p>
-
-                  <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-                    <button
-                      onClick={() => setActiveTab('login')}
-                      className="btn-press rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-fuchsia-500/15 transition hover:bg-white/15"
-                    >
-                      Enter Student Portal
-                    </button>
-                    <button
-                      onClick={() => setActiveTab('about')}
-                      className="btn-press rounded-full border border-white/30 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:border-white/50 hover:bg-white/5"
-                    >
-                      About The College
-                    </button>
+                    <div className="hidden md:block absolute right-0 top-1/2 w-[320px] -translate-y-1/2 rounded-[28px] border border-slate-200/80 bg-white/95 p-6 shadow-[0_25px_60px_rgba(15,23,42,0.12)]">
+                      <span className="text-[11px] uppercase tracking-[0.32em] text-muted">CampusCore</span>
+                      <h2 className="mt-3 text-3xl font-extrabold tracking-tight card-title sm:text-4xl">Smart Campus<br />Learning Hub</h2>
+                      <div className="my-4 h-px bg-slate-200/90"></div>
+                      <p className="text-sm leading-6 text-muted">Since 2002 — building the next generation of student-ready technology leaders.</p>
+                    </div>
                   </div>
 
-                  <div className="space-y-4">
-                    <p className="text-sm text-slate-400/90">Trusted by 400+ institutions</p>
-                    <div className="flex flex-wrap justify-center gap-3">
-                      {['Brand 1', 'Brand 2', 'Brand 3', 'Brand 4'].map((brand) => (
-                        <span key={brand} className="rounded-full border border-white/20 px-4 py-2 text-xs uppercase tracking-[0.22em] text-slate-200/80">
-                          {brand}
-                        </span>
-                      ))}
+                  <div className="space-y-6">
+                    <div className="rounded-[28px] border border-slate-200/80 bg-white/95 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.1)]">
+                      <p className="text-base italic leading-7 text-muted">"CampusCore helped me discover my strengths in AI mentorship and placement readiness." </p>
+                      <p className="mt-4 text-sm font-bold uppercase tracking-[0.28em] text-on-card">PRIYA MEHTA</p>
+                    </div>
+
+                    <div className="rounded-[28px] border border-slate-200/80 bg-white/95 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.1)]">
+                      <p className="text-sm uppercase tracking-[0.32em] text-on-card">AI MENTORSHIP</p>
+                      <p className="mt-4 text-sm leading-7 text-muted">CampusCore delivers guided curriculum planning, skill gap insights, and internship preparation through our AI-powered mentor system.</p>
+                      <p className="mt-3 text-sm leading-7 text-muted">From attendance automation to placement coaching, students access a full campus experience with personalized guidance.</p>
+
+                      <div className="mt-6 rounded-3xl bg-slate-50 p-4">
+                        <p className="text-xs uppercase tracking-[0.32em] text-muted">Expert Faculty</p>
+                        <p className="mt-1 text-2xl font-bold text-on-card">150+ Faculty Members</p>
+                      </div>
+                    </div>
+
+                    <div className="rounded-[28px] border border-slate-200/80 bg-white/95 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.1)]">
+                      <p className="text-sm uppercase tracking-[0.32em] font-semibold text-on-card">ENTER STUDENT PORTAL</p>
+                      <p className="mt-3 text-sm leading-6 text-muted">Access course dashboards, attendance reports, AI mentor plans, and placement prep in one centralized portal.</p>
                     </div>
                   </div>
                 </div>
               </div>
-            </HeroBackground>
+
+                <div className="pointer-events-none absolute right-0 top-1/2 hidden h-full w-14 flex-col items-center justify-center gap-4 lg:flex">
+                <span className="rotate-90 origin-center text-[11px] uppercase tracking-[0.32em] text-muted">hello@campuscore.edu</span>
+                <span className="rotate-90 origin-center text-[11px] uppercase tracking-[0.32em] text-muted">campuscore.edu</span>
+                <span className="rotate-90 origin-center text-[11px] uppercase tracking-[0.32em] text-muted">@CampusCore</span>
+              </div>
+            </section>
 
             {/* Core Features Pillars Grid */}
             <div className="space-y-6 pt-6">
               <FadeInOnScroll>
-                <h3 className="text-base font-extrabold text-slate-200 border-b border-slate-900 pb-3 flex items-center space-x-2">
+                <h3 className="text-base font-extrabold card-title border-b border-slate-900 pb-3 flex items-center space-x-2">
                   <Building className="h-4.5 w-4.5 text-blue-400" />
                   <span className="uppercase tracking-wider text-xs">Integrated Campus Pillars</span>
                 </h3>
@@ -260,12 +265,12 @@ export default function PublicWebsite({ onLoginSuccess }) {
                   const Icon = pillar.icon;
                   return (
                     <StaggerItem key={idx}>
-                      <div className="glass-card rounded-2xl p-6 bg-slate-900/10 border border-slate-900 hover-scale hover-glow flex flex-col items-start space-y-4 h-full">
+                      <div className="glass-card rounded-2xl p-6 border hover-scale hover-glow flex flex-col items-start space-y-4 h-full">
                         <div className={`p-3 rounded-xl ${pillar.color} border border-white/5`}>
                           <Icon className="h-5 w-5" />
                         </div>
-                        <h4 className="text-sm font-bold text-slate-200">{pillar.title}</h4>
-                        <p className="text-xs text-slate-400 leading-relaxed">{pillar.desc}</p>
+                        <h4 className="text-sm font-bold card-title">{pillar.title}</h4>
+                        <p className="text-xs text-muted leading-relaxed">{pillar.desc}</p>
                       </div>
                     </StaggerItem>
                   );
@@ -285,26 +290,27 @@ export default function PublicWebsite({ onLoginSuccess }) {
                   { count: '100%', label: 'MERN Architecture', desc: 'Blazing fast loading speeds' }
                 ].map((stat, idx) => (
                   <StaggerItem key={idx}>
-                    <div className="glass-card rounded-2xl p-6 border border-slate-900 bg-slate-900/10 text-center space-y-1.5 hover-glow transition-all">
-                    <div className="text-2xl font-black gradient-text-animated">
-                      <CountUp 
-                        end={stat.count} 
-                        duration={2.5} 
-                        decimals={stat.count.includes('.') ? 1 : 0}
-                      />
+                    <div className="glass-card rounded-2xl p-6 border text-center space-y-4 hover-glow transition-all">
+                      <div className="text-2xl font-black gradient-text-animated">
+                        <CountUp
+                          end={stat.count}
+                          duration={2.5}
+                          decimals={stat.count.includes('.') ? 1 : 0}
+                        />
+                      </div>
+                      <div className="text-xs font-bold card-title">{stat.label}</div>
+                      <div className="text-[10px] text-muted">{stat.desc}</div>
                     </div>
-                    <div className="text-xs font-bold text-slate-200">{stat.label}</div>
-                    <div className="text-[10px] text-slate-500">{stat.desc}</div>
-                  </div>
-                </StaggerItem>
-              ))}
-            </StaggerContainer>
+                  </StaggerItem>
+                ))}
+              </StaggerContainer>
 
+            </div>
             {/* Events & Notices List */}
             <div className="space-y-6 pt-6">
               <FadeInOnScroll>
                 <div className="flex items-center justify-between border-b border-slate-900 pb-3">
-                  <h3 className="text-base font-extrabold text-slate-200 flex items-center space-x-2.5">
+                  <h3 className="text-base font-extrabold card-title flex items-center space-x-2.5">
                     <Calendar className="h-4.5 w-4.5 text-blue-400" />
                     <span>College Events & Announcements</span>
                   </h3>
@@ -329,16 +335,16 @@ export default function PublicWebsite({ onLoginSuccess }) {
                             <span className="px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/25 text-[9px] font-bold uppercase tracking-wide">
                               Upcoming notice
                             </span>
-                            <span className="text-[10px] text-slate-400 font-semibold font-mono">
+                            <span className="text-[10px] text-muted font-semibold font-mono">
                               {new Date(evt.event_date).toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' })}
                             </span>
                           </div>
-                          <h4 className="text-sm font-bold text-slate-250 leading-snug">{evt.title}</h4>
-                          <p className="text-xs text-slate-400 leading-relaxed">{evt.description}</p>
+                          <h4 className="text-sm font-bold card-title leading-snug">{evt.title}</h4>
+                          <p className="text-xs text-muted leading-relaxed">{evt.description}</p>
                         </div>
                         
-                        <div className="flex items-center space-x-2 text-[10px] text-slate-500 border-t border-slate-900 pt-3">
-                          <MapPin className="h-3 w-3 text-slate-500 shrink-0" />
+                        <div className="flex items-center space-x-2 text-[10px] text-muted border-t border-slate-900 pt-3">
+                          <MapPin className="h-3 w-3 text-muted shrink-0" />
                           <span>Venue: {evt.location}</span>
                         </div>
                       </div>
@@ -353,18 +359,18 @@ export default function PublicWebsite({ onLoginSuccess }) {
         {activeTab === 'about' && (
           <PageTransition className="space-y-8 max-w-4xl mx-auto py-6">
             <FadeInOnScroll className="text-center space-y-2">
-              <h2 className="text-2xl font-black text-slate-100 uppercase tracking-wide">About CampusCore College</h2>
-              <p className="text-xs text-slate-400">Pioneering standard-driven engineering research since 2002</p>
+              <h2 className="text-2xl font-black card-title uppercase tracking-wide">About CampusCore College</h2>
+              <p className="text-xs text-muted">Pioneering standard-driven engineering research since 2002</p>
             </FadeInOnScroll>
             
             <FadeInOnScroll delay={0.1}>
-              <div className="glass-card rounded-2xl p-6 md:p-8 bg-slate-900/10 border border-slate-900 space-y-6 leading-relaxed">
+              <div className="glass-card rounded-2xl p-6 md:p-8 border space-y-6 leading-relaxed">
                 <div className="space-y-3.5">
                   <h3 className="text-base font-bold text-blue-400 flex items-center space-x-2 border-b border-slate-900 pb-2">
                     <ShieldCheck className="h-4.5 w-4.5" />
                     <span>Our Vision & Values</span>
                   </h3>
-                  <p className="text-xs text-slate-350 leading-relaxed">
+                  <p className="text-xs text-muted leading-relaxed">
                     To cultivate an innovative, technology-driven academic environment that integrates core engineering studies with next-generation smart automations. We focus on preparing students to solve global problems through critical analytics, solid foundations, and personalized mentorship.
                   </p>
                 </div>
@@ -372,24 +378,24 @@ export default function PublicWebsite({ onLoginSuccess }) {
                 <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-slate-900/60" staggerDelay={0.1}>
                   <StaggerItem>
                     <div className="space-y-1.5">
-                      <h4 className="text-xs font-bold text-slate-200 uppercase tracking-wide">Integrated Campus</h4>
-                      <p className="text-[11px] text-slate-400 leading-relaxed">
+                      <h4 className="text-xs font-bold card-title uppercase tracking-wide">Integrated Campus</h4>
+                      <p className="text-[11px] text-muted leading-relaxed">
                         Embedded sensors, attendance tracking logs, library transactions, and real-time Parent alerts via email.
                       </p>
                     </div>
                   </StaggerItem>
                   <StaggerItem>
                     <div className="space-y-1.5">
-                      <h4 className="text-xs font-bold text-slate-200 uppercase tracking-wide">AI Mentorship</h4>
-                      <p className="text-[11px] text-slate-400 leading-relaxed">
+                      <h4 className="text-xs font-bold card-title uppercase tracking-wide">AI Mentorship</h4>
+                      <p className="text-[11px] text-muted leading-relaxed">
                         Providing automated resume parsers, skill gap evaluations, and personalized roadmaps custom-tailored to student scores.
                       </p>
                     </div>
                   </StaggerItem>
                   <StaggerItem>
                     <div className="space-y-1.5">
-                      <h4 className="text-xs font-bold text-slate-200 uppercase tracking-wide">Industry Placement</h4>
-                      <p className="text-[11px] text-slate-400 leading-relaxed">
+                      <h4 className="text-xs font-bold card-title uppercase tracking-wide">Industry Placement</h4>
+                      <p className="text-[11px] text-muted leading-relaxed">
                         Maintained links with premium recruiters and a solid internship prep curriculum matching standard specifications.
                       </p>
                     </div>
@@ -401,24 +407,24 @@ export default function PublicWebsite({ onLoginSuccess }) {
             {/* Additional About sections to fill empty area */}
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6" staggerDelay={0.1}>
               <StaggerItem>
-                <div className="glass-card rounded-2xl p-6 bg-slate-900/10 border border-slate-900 hover-glow transition-all space-y-3 h-full">
+                <div className="glass-card rounded-2xl p-6 border hover-glow transition-all space-y-3 h-full">
                   <div className="p-3 rounded-xl text-blue-400 bg-blue-500/10 border border-white/5 w-fit">
                     <Target className="h-5 w-5" />
                   </div>
-                  <h4 className="text-sm font-bold text-slate-200">Our Mission</h4>
-                  <p className="text-xs text-slate-400 leading-relaxed">
+                  <h4 className="text-sm font-bold card-title">Our Mission</h4>
+                  <p className="text-xs text-muted leading-relaxed">
                     To bridge the gap between traditional academia and industry demands through technology-driven learning, 
                     real-time campus management, and AI-powered career guidance that prepares students for the global workforce.
                   </p>
                 </div>
               </StaggerItem>
               <StaggerItem>
-                <div className="glass-card rounded-2xl p-6 bg-slate-900/10 border border-slate-900 hover-glow transition-all space-y-3 h-full">
+                <div className="glass-card rounded-2xl p-6 border hover-glow transition-all space-y-3 h-full">
                   <div className="p-3 rounded-xl text-indigo-400 bg-indigo-500/10 border border-white/5 w-fit">
                     <Layers className="h-5 w-5" />
                   </div>
-                  <h4 className="text-sm font-bold text-slate-200">Technology Stack</h4>
-                  <p className="text-xs text-slate-400 leading-relaxed">
+                  <h4 className="text-sm font-bold card-title">Technology Stack</h4>
+                  <p className="text-xs text-muted leading-relaxed">
                     Built on a modern MERN architecture with PostgreSQL, Redis caching, Supabase integration, 
                     Socket.IO real-time communications, and ESP32-powered IoT gate terminals for seamless campus automation.
                   </p>
@@ -427,8 +433,8 @@ export default function PublicWebsite({ onLoginSuccess }) {
             </StaggerContainer>
 
             <FadeInOnScroll delay={0.2}>
-              <div className="glass-card rounded-2xl p-6 bg-slate-900/10 border border-slate-900 hover-glow transition-all">
-                <h4 className="text-sm font-bold text-slate-200 mb-4 flex items-center space-x-2 border-b border-slate-900 pb-2">
+              <div className="glass-card rounded-2xl p-6 border hover-glow transition-all">
+                <h4 className="text-sm font-bold card-title mb-4 flex items-center space-x-2 border-b border-slate-900 pb-2">
                   <Globe className="h-4 w-4 text-blue-400" />
                   <span>Campus Highlights</span>
                 </h4>
@@ -440,11 +446,11 @@ export default function PublicWebsite({ onLoginSuccess }) {
                     { value: '15+', label: 'Industry Partners' },
                   ].map((item, idx) => (
                     <StaggerItem key={idx}>
-                      <div className="text-center py-3">
+                        <div className="text-center py-3">
                         <div className="text-lg font-black gradient-text-animated">
                           <CountUp end={item.value} duration={2} />
                         </div>
-                        <div className="text-[10px] text-slate-500 font-semibold mt-1">{item.label}</div>
+                        <div className="text-[10px] text-muted font-semibold mt-1">{item.label}</div>
                       </div>
                     </StaggerItem>
                   ))}
@@ -459,11 +465,11 @@ export default function PublicWebsite({ onLoginSuccess }) {
             <FadeInOnScroll>
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-900 pb-4">
                 <div>
-                  <h2 className="text-xl font-bold text-slate-100">Academic Departments</h2>
-                  <p className="text-xs text-slate-450 mt-0.5">Explore our departments leading innovation and research</p>
+                  <h2 className="text-xl font-bold card-title">Academic Departments</h2>
+                  <p className="text-xs text-muted mt-0.5">Explore our departments leading innovation and research</p>
                 </div>
                 <div className="relative w-full md:w-80">
-                  <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-500">
+                  <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-muted">
                     <Search className="h-4 w-4" />
                   </span>
                   <input
@@ -471,7 +477,7 @@ export default function PublicWebsite({ onLoginSuccess }) {
                     placeholder="Search departments..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-9 pr-4 py-2.5 bg-slate-950 border border-slate-900 rounded-xl text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-all text-xs"
+                    className="w-full pl-9 pr-4 py-2.5 bg-white border border-gray-100 rounded-xl text-on-card placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-all text-xs"
                   />
                 </div>
               </div>
@@ -491,18 +497,18 @@ export default function PublicWebsite({ onLoginSuccess }) {
                   .filter(dept => dept.name.toLowerCase().includes(searchQuery.toLowerCase()) || dept.code.toLowerCase().includes(searchQuery.toLowerCase()))
                   .map((dept) => (
                     <StaggerItem key={dept.id}>
-                      <div className="glass-card rounded-2xl p-6 bg-slate-900/10 border border-slate-900 space-y-4 hover-scale hover-glow transition-all">
+                      <div className="glass-card rounded-2xl p-6 border space-y-4 hover-scale hover-glow transition-all">
                         <div className="flex items-start justify-between">
                           <div className="space-y-1">
                             <span className="px-2.5 py-0.5 rounded bg-blue-500/10 text-blue-400 font-mono text-[9px] font-bold uppercase tracking-wider">
                               {dept.code}
                             </span>
-                            <h4 className="text-sm font-bold text-slate-200 pt-1.5">{dept.name}</h4>
+                            <h4 className="text-sm font-bold card-title pt-1.5">{dept.name}</h4>
                           </div>
                         </div>
-                        <p className="text-xs text-slate-400 leading-relaxed">{dept.description}</p>
-                        <div className="border-t border-slate-900/60 pt-3 flex justify-between text-[10px] text-slate-500">
-                          <span>Head of Department: <span className="font-semibold text-slate-300">{dept.head_of_dept || 'Dr. Yathish Aradhya'}</span></span>
+                        <p className="text-xs text-muted leading-relaxed">{dept.description}</p>
+                        <div className="border-t border-slate-900/60 pt-3 flex justify-between text-[10px] text-muted">
+                          <span>Head of Department: <span className="font-semibold text-muted">{dept.head_of_dept || 'Dr. Yathish Aradhya'}</span></span>
                         </div>
                       </div>
                     </StaggerItem>
@@ -517,11 +523,11 @@ export default function PublicWebsite({ onLoginSuccess }) {
             <FadeInOnScroll>
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-900 pb-4">
                 <div>
-                  <h2 className="text-xl font-bold text-slate-100">Courses & Curriculum</h2>
-                  <p className="text-xs text-slate-450 mt-0.5">Undergraduate and postgraduate degrees available</p>
+                  <h2 className="text-xl font-bold card-title">Courses & Curriculum</h2>
+                  <p className="text-xs text-muted mt-0.5">Undergraduate and postgraduate degrees available</p>
                 </div>
                 <div className="relative w-full md:w-80">
-                  <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-500">
+                  <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-muted">
                     <Search className="h-4 w-4" />
                   </span>
                   <input
@@ -529,7 +535,7 @@ export default function PublicWebsite({ onLoginSuccess }) {
                     placeholder="Search courses..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-9 pr-4 py-2.5 bg-slate-950 border border-slate-900 rounded-xl text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-all text-xs"
+                    className="w-full pl-9 pr-4 py-2.5 bg-white border border-gray-100 rounded-xl text-on-card placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-all text-xs"
                   />
                 </div>
               </div>
@@ -555,17 +561,17 @@ export default function PublicWebsite({ onLoginSuccess }) {
                             <span className="px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 font-mono text-[9px] font-bold">
                               {course.code}
                             </span>
-                            <span className="text-[10px] text-slate-400 font-semibold font-mono">
+                            <span className="text-[10px] text-muted font-semibold font-mono">
                               {course.degree}
                             </span>
                           </div>
-                          <h4 className="text-sm font-bold text-slate-200 line-clamp-1">{course.name}</h4>
-                          <p className="text-xs text-slate-400 leading-relaxed line-clamp-3">{course.description}</p>
+                          <h4 className="text-sm font-bold card-title line-clamp-1">{course.name}</h4>
+                          <p className="text-xs text-muted leading-relaxed line-clamp-3">{course.description}</p>
                         </div>
                         
-                        <div className="border-t border-slate-900 pt-3 flex justify-between text-[10px] text-slate-500">
-                          <span>Credits: <strong className="text-slate-350">{course.credits}</strong></span>
-                          <span>Duration: <strong className="text-slate-350">{course.duration_years} Years</strong></span>
+                        <div className="border-t border-slate-900 pt-3 flex justify-between text-[10px] text-muted">
+                          <span>Credits: <strong className="text-on-card">{course.credits}</strong></span>
+                          <span>Duration: <strong className="text-on-card">{course.duration_years} Years</strong></span>
                         </div>
                       </div>
                     </StaggerItem>
@@ -586,11 +592,11 @@ export default function PublicWebsite({ onLoginSuccess }) {
             <FadeInOnScroll>
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-900 pb-4">
                 <div>
-                  <h2 className="text-xl font-bold text-slate-100">Faculty Roster</h2>
-                  <p className="text-xs text-slate-450 mt-0.5">Our academic lecturers and industry-active scholars</p>
+                  <h2 className="text-xl font-bold card-title">Faculty Roster</h2>
+                  <p className="text-xs text-muted mt-0.5">Our academic lecturers and industry-active scholars</p>
                 </div>
                 <div className="relative w-full md:w-80">
-                  <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-500">
+                  <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-muted">
                     <Search className="h-4 w-4" />
                   </span>
                   <input
@@ -598,7 +604,7 @@ export default function PublicWebsite({ onLoginSuccess }) {
                     placeholder="Search faculty by name/department..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-9 pr-4 py-2.5 bg-slate-950 border border-slate-900 rounded-xl text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-all text-xs"
+                    className="w-full pl-9 pr-4 py-2.5 bg-white border border-gray-100 rounded-xl text-on-card placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-all text-xs"
                   />
                 </div>
               </div>
@@ -618,25 +624,25 @@ export default function PublicWebsite({ onLoginSuccess }) {
                   .filter(f => f.first_name.toLowerCase().includes(searchQuery.toLowerCase()) || f.last_name.toLowerCase().includes(searchQuery.toLowerCase()) || (f.department && f.department.toLowerCase().includes(searchQuery.toLowerCase())))
                   .map((f, idx) => (
                     <StaggerItem key={idx}>
-                      <div className="glass-card rounded-2xl p-5 bg-slate-900/10 border border-slate-900 hover-scale hover-glow transition-all space-y-4">
+                      <div className="glass-card rounded-2xl p-5 border hover-scale hover-glow transition-all space-y-4">
                         <div className="flex items-center space-x-3.5">
                           <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center font-bold text-sm text-white shadow-md border border-white/10">
                             {f.first_name[0]}{f.last_name[0]}
                           </div>
                           <div>
-                            <h4 className="text-sm font-bold text-slate-250">{f.first_name} {f.last_name}</h4>
+                            <h4 className="text-sm font-bold card-title">{f.first_name} {f.last_name}</h4>
                             <p className="text-[10px] text-blue-400 font-semibold">{f.department || 'Assistant Professor'}</p>
                           </div>
                         </div>
                         
-                        <div className="space-y-1.5 text-[10px] text-slate-400 border-t border-slate-900 pt-3">
+                        <div className="space-y-1.5 text-[10px] text-muted border-t border-slate-900 pt-3">
                           <div className="flex items-center space-x-2">
-                            <Mail className="h-3 w-3 text-slate-500 shrink-0" />
+                            <Mail className="h-3 w-3 text-muted shrink-0" />
                             <span className="truncate">{f.email}</span>
                           </div>
                           {f.phone && (
                             <div className="flex items-center space-x-2">
-                              <Phone className="h-3 w-3 text-slate-500 shrink-0" />
+                              <Phone className="h-3 w-3 text-muted shrink-0" />
                               <span>{f.phone}</span>
                             </div>
                           )}
@@ -653,8 +659,8 @@ export default function PublicWebsite({ onLoginSuccess }) {
           <PageTransition className="space-y-6">
             <FadeInOnScroll>
               <div className="border-b border-slate-900 pb-4">
-                <h2 className="text-xl font-bold text-slate-100">Placement Reports</h2>
-                <p className="text-xs text-slate-450 mt-0.5">Consistently driving job excellence across industry standard salaries</p>
+                <h2 className="text-xl font-bold card-title">Placement Reports</h2>
+                <p className="text-xs text-muted mt-0.5">Consistently driving job excellence across industry standard salaries</p>
               </div>
             </FadeInOnScroll>
 
@@ -666,17 +672,17 @@ export default function PublicWebsite({ onLoginSuccess }) {
                     {[1, 2, 3, 4, 5].map((s) => (
                       <Star key={s} className="h-3.5 w-3.5 text-amber-400 fill-amber-400" />
                     ))}
-                    <span className="text-[9px] text-slate-400 font-bold ml-1 uppercase tracking-wide">Top Recruiters Choice</span>
+                    <span className="text-[9px] text-muted font-bold ml-1 uppercase tracking-wide">Top Recruiters Choice</span>
                   </div>
-                  <h3 className="text-base font-bold text-slate-200">Our Students Work at Leading Organizations</h3>
-                  <p className="text-xs text-slate-450 leading-relaxed">
+                  <h3 className="text-base font-bold card-title">Our Students Work at Leading Organizations</h3>
+                  <p className="text-xs text-muted leading-relaxed">
                     CampusCore graduates are placed in premier companies worldwide, offering software development, cloud operations, cyber threat analysis, and data consulting.
                   </p>
                 </div>
                 <StaggerContainer className="flex flex-wrap justify-center gap-2 shrink-0 max-w-xs md:max-w-md" staggerDelay={0.06}>
                   {['Google', 'Microsoft', 'Amazon', 'Adobe', 'Qualcomm', 'Infosys'].map((company, idx) => (
                     <StaggerItem key={idx}>
-                      <span className="px-3.5 py-1.5 rounded-xl bg-slate-950/90 border border-slate-800 font-bold text-xs text-slate-400 tracking-wide select-none hover-glow transition-all">
+                      <span className="px-3.5 py-1.5 rounded-xl bg-white/90 border border-gray-100 font-bold text-xs text-muted tracking-wide select-none hover-glow transition-all">
                         {company}
                       </span>
                     </StaggerItem>
@@ -687,8 +693,8 @@ export default function PublicWebsite({ onLoginSuccess }) {
 
             {/* Placement List table */}
             <FadeInOnScroll delay={0.2}>
-              <div className="glass-card rounded-2xl p-6 border border-slate-900 bg-slate-900/10">
-                <h3 className="text-sm font-bold text-slate-250 mb-4 flex items-center space-x-2 border-b border-slate-900 pb-2">
+              <div className="glass-card rounded-2xl p-6 border">
+                <h3 className="text-sm font-bold card-title mb-4 flex items-center space-x-2 border-b border-slate-900 pb-2">
                   <Briefcase className="h-4.5 w-4.5 text-blue-400" />
                   <span>Recent Placements Record</span>
                 </h3>
@@ -696,7 +702,7 @@ export default function PublicWebsite({ onLoginSuccess }) {
                 <div className="overflow-x-auto">
                   <table className="w-full text-left text-xs border-collapse">
                     <thead>
-                      <tr className="border-b border-slate-850 text-slate-400">
+                      <tr className="border-b border-slate-850 text-muted">
                         <th className="pb-2.5 font-bold uppercase tracking-wider">Student Name</th>
                         <th className="pb-2.5 font-bold uppercase tracking-wider">Company Recruiter</th>
                         <th className="pb-2.5 font-bold uppercase tracking-wider">Job Role</th>
@@ -707,20 +713,20 @@ export default function PublicWebsite({ onLoginSuccess }) {
                     <tbody>
                       {placements.length === 0 ? (
                         <tr>
-                          <td colSpan="5" className="py-4 text-center text-slate-500">No placements listed in the log.</td>
+                          <td colSpan="5" className="py-4 text-center text-muted">No placements listed in the log.</td>
                         </tr>
                       ) : (
                         placements.map((p, idx) => (
                           <tr key={idx} className="border-b border-slate-900/60 hover:bg-slate-900/5">
-                            <td className="py-3 font-semibold text-slate-200">{p.student_name}</td>
-                            <td className="py-3 text-slate-400 font-bold">{p.company_name}</td>
-                            <td className="py-3 text-slate-450">{p.job_role || 'Software Engineer Intern'}</td>
+                            <td className="py-3 font-semibold card-title">{p.student_name}</td>
+                            <td className="py-3 text-muted font-bold">{p.company_name}</td>
+                            <td className="py-3 text-muted">{p.job_role || 'Software Engineer Intern'}</td>
                             <td className="py-3 text-right">
                               <span className="inline-block px-2.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-black font-mono">
                                 ₹ {parseFloat(p.package_lpa).toFixed(2)} LPA
                               </span>
                             </td>
-                            <td className="py-3 text-right text-slate-500 font-mono font-semibold">{p.placed_year}</td>
+                            <td className="py-3 text-right text-muted font-mono font-semibold">{p.placed_year}</td>
                           </tr>
                         ))
                       )}
@@ -739,11 +745,11 @@ export default function PublicWebsite({ onLoginSuccess }) {
                 { value: '100%', label: 'Internship Coverage' },
               ].map((stat, idx) => (
                 <StaggerItem key={idx}>
-                  <div className="glass-card rounded-2xl p-5 border border-slate-900 bg-slate-900/10 text-center space-y-1 hover-glow transition-all">
+                  <div className="glass-card rounded-2xl p-5 border text-center space-y-1 hover-glow transition-all">
                     <div className="text-xl font-black gradient-text-animated">
                       <CountUp end={stat.value} duration={2} decimals={stat.value.includes('.') ? 1 : 0} />
                     </div>
-                    <div className="text-[10px] text-slate-500 font-semibold">{stat.label}</div>
+                    <div className="text-[10px] text-muted font-semibold">{stat.label}</div>
                   </div>
                 </StaggerItem>
               ))}
@@ -754,19 +760,19 @@ export default function PublicWebsite({ onLoginSuccess }) {
         {activeTab === 'contact' && (
           <PageTransition className="max-w-2xl mx-auto space-y-6 py-6">
             <FadeInOnScroll className="text-center space-y-1.5">
-              <h2 className="text-2xl font-black text-slate-100 uppercase tracking-wide">Contact Us</h2>
-              <p className="text-xs text-slate-400">We'd love to hear from you. Have inquiries, suggestions, or need portal access?</p>
+              <h2 className="text-2xl font-black card-title uppercase tracking-wide">Contact Us</h2>
+              <p className="text-xs text-muted">We'd love to hear from you. Have inquiries, suggestions, or need portal access?</p>
             </FadeInOnScroll>
 
             <FadeInOnScroll delay={0.1}>
-              <div className="glass-card rounded-2xl p-6 bg-slate-900/10 border border-slate-900 hover-glow">
+              <div className="glass-card rounded-2xl p-6 border hover-glow">
                 {contactSubmitted ? (
                   <div className="py-8 text-center space-y-3">
                     <div className="h-12 w-12 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-450 flex items-center justify-center mx-auto">
                       <ShieldCheck className="h-6 w-6" />
                     </div>
-                    <h3 className="text-base font-bold text-slate-100">Message Logged!</h3>
-                    <p className="text-xs text-slate-405 max-w-sm mx-auto leading-relaxed">
+                    <h3 className="text-base font-bold card-title">Message Logged!</h3>
+                    <p className="text-xs text-muted max-w-sm mx-auto leading-relaxed">
                       Thank you. Your message has been safely logged in our system. A representative will get back to you shortly.
                     </p>
                   </div>
@@ -774,37 +780,37 @@ export default function PublicWebsite({ onLoginSuccess }) {
                   <form onSubmit={handleContactSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-1.5">
-                        <label className="text-[10px] font-bold text-slate-450 uppercase tracking-wider block">Full Name</label>
+                        <label className="text-[10px] font-bold text-muted uppercase tracking-wider block">Full Name</label>
                         <input
                           type="text"
                           required
                           value={contactForm.name}
                           onChange={(e) => setContactForm({ ...contactForm, name: e.target.value })}
-                          className="w-full px-4 py-2.5 bg-slate-950/80 border border-slate-850 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-all text-xs"
+                          className="w-full px-4 py-2.5 bg-white border border-gray-100 rounded-xl text-on-card placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-all text-xs"
                           placeholder="John Doe"
                         />
                       </div>
                       <div className="space-y-1.5">
-                        <label className="text-[10px] font-bold text-slate-450 uppercase tracking-wider block">Email Address</label>
+                        <label className="text-[10px] font-bold text-muted uppercase tracking-wider block">Email Address</label>
                         <input
                           type="email"
                           required
                           value={contactForm.email}
                           onChange={(e) => setContactForm({ ...contactForm, email: e.target.value })}
-                          className="w-full px-4 py-2.5 bg-slate-950/80 border border-slate-850 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-all text-xs"
+                          className="w-full px-4 py-2.5 bg-white border border-gray-100 rounded-xl text-on-card placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-all text-xs"
                           placeholder="john@example.com"
                         />
                       </div>
                     </div>
 
                     <div className="space-y-1.5">
-                      <label className="text-[10px] font-bold text-slate-450 uppercase tracking-wider block">Your Message</label>
+                      <label className="text-[10px] font-bold text-muted uppercase tracking-wider block">Your Message</label>
                       <textarea
                         required
                         rows="4"
                         value={contactForm.message}
                         onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })}
-                        className="w-full px-4 py-2.5 bg-slate-950/80 border border-slate-850 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-all text-xs leading-relaxed"
+                        className="w-full px-4 py-2.5 bg-white border border-gray-100 rounded-xl text-on-card placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-all text-xs leading-relaxed"
                         placeholder="Write your query or feedback here..."
                       ></textarea>
                     </div>
@@ -830,7 +836,7 @@ export default function PublicWebsite({ onLoginSuccess }) {
       </main>
 
       {/* Footer */}
-      <footer className="py-6 border-t border-slate-900 bg-slate-950/30 text-center text-[10px] text-slate-500 relative z-10">
+      <footer className="py-6 border-t border-slate-200 bg-transparent text-center text-[10px] text-muted relative z-10">
         <p>© 2026 CampusCore Systems Inc. All rights reserved. Registered under Supabase Hosting Specs.</p>
       </footer>
     </div>
