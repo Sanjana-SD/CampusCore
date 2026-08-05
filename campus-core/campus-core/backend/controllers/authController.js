@@ -3,6 +3,8 @@ const bcrypt = require('bcryptjs');
 const db = require('../db');
 require('dotenv').config();
 
+const JWT_SECRET = process.env.JWT_SECRET || 'campuscore-dev-secret';
+
 const login = async (req, res) => {
   const { username, password } = req.body;
 
@@ -27,7 +29,7 @@ const login = async (req, res) => {
     // Generate JWT
     const token = jwt.sign(
       { id: user.id, username: user.username, role: user.role },
-      process.env.JWT_SECRET,
+      JWT_SECRET,
       { expiresIn: '24h' }
     );
 

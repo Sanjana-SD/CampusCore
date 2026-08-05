@@ -3,182 +3,182 @@
     {
       "id": "45d510e0-3722-4fe7-9aea-bfd95bba3326",
       "username": "admin",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$0iirkm5Rtd3JxXSK7166mOfaSnrMX.N/qDVH9B.ibC2eAgb/44QOq",
       "role": "admin",
       "created_at": "2026-07-17T19:09:39.267Z"
     },
     {
       "id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
       "username": "faculty1",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$F446Llm9gfJmAEbc/iNxhuj5slASYfGIZCWFIZWQbdLa9QXVS6Qmu",
       "role": "faculty",
       "created_at": "2026-07-17T19:09:39.270Z"
     },
     {
       "id": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1",
       "username": "faculty2",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$NkL2YFsmRk9F309xOjtEVuSdyIhylo7YfPjyIlanp0KS/6PkZOQMe",
       "role": "faculty",
       "created_at": "2026-07-17T19:09:39.271Z"
     },
     {
       "id": "5cfba41f-5988-4169-acac-6ca9cc929c1c",
       "username": "librarian",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$BIt/eLABZ07BM/gjk8iJZuUzG4zF5cx6iJsRyQC.wepXnn4h42Q6C",
       "role": "librarian",
       "created_at": "2026-07-17T19:09:39.274Z"
     },
     {
       "id": "9cb81411-8528-4b6d-8785-ec2908a82f32",
       "username": "parent1",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$xX.5aLX.RMqQ/A5Ev0cXJOXicRHHCBQDqUcrilUWmRON./M0Mur/S",
       "role": "parent",
       "created_at": "2026-07-17T19:09:39.279Z"
     },
     {
       "id": "1dcb0438-8b2e-4a5f-8619-b84182c1e201",
       "username": "parent2",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$q1pWQNCTWpv5ZZgS5mMwmOP9bFEoCqrbdLUakupb39YKqI1zVdD6m",
       "role": "parent",
       "created_at": "2026-07-17T19:09:39.281Z"
     },
     {
       "id": "7a8e26de-f630-43a2-a3e8-f17657d18dc7",
       "username": "student1",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$QovBm0TGuw/wZAqsimgEXuxmjuK7UicfzQwJ4QW6SRHN8d7GDbXeC",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.283Z"
     },
     {
       "id": "8e1af832-d4e2-439a-a304-d8f1278273cf",
       "username": "student2",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$uDujqpy0AyZ03shjIYzdtuA8g7VW9lKpGY1YAE64IuOSHjuYJAWqa",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.284Z"
     },
     {
       "id": "fad34015-ce7a-4d4b-b7ac-e8f390be5e11",
       "username": "classrep1",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$SFILyibYNxnZAz/dThfGY.G1SdkPcGHYtaus5lgP6eEbpoMjb.ODG",
       "role": "class_rep",
       "created_at": "2026-07-17T19:09:39.286Z"
     },
     {
       "id": "420126e7-2e41-4b7d-94fb-4da915b20593",
       "username": "student4",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$xHBmlV0RP7b5ueX4CxZCsezu5Ai/UVhQERefqrLPC1oNyswu9KPYy",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.288Z"
     },
     {
       "id": "17f414b1-c3b3-46de-b573-917257bfce01",
       "username": "student5",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$E8EVIvDz/UGVHU5CGx2Ha.FlzLU0SDeJgRiwUQSOesMPSiE7tcf56",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.289Z"
     },
     {
       "id": "2870ae7f-b143-4d43-ad68-99d74f8a4e87",
       "username": "student6",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$JfQy7rD.CUFGV88kdeq7QuJkTHmN3oSBniilWRRsQe7ZmBYmIMAIW",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.291Z"
     },
     {
       "id": "0a01b1d0-14d3-412e-a3c7-fce742d5d7e2",
       "username": "student7",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$lKZxE9kdYR6novZrdEcbeOkII89zZkGyolspgT.WtOWYIGkB9NKkC",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.297Z"
     },
     {
       "id": "56bebcec-3506-4aa0-b105-d2e4f4f34b81",
       "username": "student8",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$jecrHpleubRrmD2ExlBwx.OvakEjZ3DLC87ZZb7Z./xV263CjVbOe",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.299Z"
     },
     {
       "id": "c8629e08-bbc9-435e-992a-29cdc7252a33",
       "username": "student9",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$kGR7Uuc5kF5GWCXnaStniO5eZP9b7iMC8pBLSKOrcCcc4ZPA3YNDS",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.301Z"
     },
     {
       "id": "57a6ea58-5bc9-43ef-a474-0ccc8ffbdc61",
       "username": "student10",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$1R0.T42uPMAF9dGwLtZEleIUzMCA5N5yN7i5jqIRUrsrunRwmxcVu",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.302Z"
     },
     {
       "id": "23f6f525-6b82-44cb-a2e0-ff7459ba9c06",
       "username": "student11",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$GTHD0sRjKXYYzE1g08NAbuI9yj7MMF8MR1x7hcG8SZMltDR7g5/Eu",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.304Z"
     },
     {
       "id": "2837ed78-67c4-4e63-b703-aae2c3756a29",
       "username": "student12",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$4Suf1LBi0HbnCOFuH49cMOs4Hp.CYhp8wggVsCnBK/3YlmH760kRi",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.306Z"
     },
     {
       "id": "9bf160af-39f1-4c14-a377-fd71c627d232",
       "username": "student13",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$UtyR3ftC.BeXiS7g8C0t0.B2Y8fEUlmnfW.n.SJhOn2CZ0ejoR9dO",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.308Z"
     },
     {
       "id": "dd613bc7-7293-4916-a5b3-2d72553d3278",
       "username": "student14",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$YBvM3/KNMdlz20AQNBXA.OuB4MhVyqwuv2IQP89QQpiSPl.3jC8PK",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.313Z"
     },
     {
       "id": "eae7eb63-33d5-4bde-b550-201ffe33737a",
       "username": "student15",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$ztxUqT0gVSJSFY3cHMX7seoyNCb6.35TiriHHzwJu5iyy.mqgx7CG",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.314Z"
     },
     {
       "id": "860729ab-2a37-4f83-87a5-e5ef14817b55",
       "username": "student16",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$M3kF4XDtSLJ3m1hmseZDfu5udUZ68Yxv5ag5VAdTz68SLqWoRacdW",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.316Z"
     },
     {
       "id": "cacb7c40-07fd-44ae-9d78-1cf1563d14c4",
       "username": "student17",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$lxjuMwfVIkSGUBd3OuD.9eHJWqPe5jZEv/l7InP6hxPi1.YpMTF6W",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.318Z"
     },
     {
       "id": "94690220-ce9e-4ef4-b5f4-1e1a965b4f8b",
       "username": "student18",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$ZIDCQyvEeKQ48LWZ7d0jx.Dnl8zu4mmXw6oYn0m1ID6WU5XY3DRjy",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.321Z"
     },
     {
       "id": "38fe3893-8629-4e4f-a85e-fbcf38a54d19",
       "username": "student19",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$NeCHxBBjxFcNt8kDwMfYl.utkK.1uDDY94K.FQcwUt2xUIuoTmnTy",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.323Z"
     },
     {
       "id": "d898605e-0c5f-455d-bab4-fc193cf3cb88",
       "username": "student20",
-      "password_hash": "$2a$10$LLweGnyD4CGN03Tn6bjFLOl/CoVZUl8T8LnNgt23r.obwvkIsr0T6",
+      "password_hash": "$2a$10$EJF28FTcnK5lZzRiWHwJDenawSA95vehtdPWxm7GUSFjWC.hRQiDC",
       "role": "student",
       "created_at": "2026-07-17T19:09:39.325Z"
     }
@@ -723,7 +723,13 @@
       "role": "Software Engineer Intern",
       "description": "Join Google's Core Infrastructure engineering team. You will build highly scalable REST microservices and integrate real-time RPC channels.",
       "package_lpa": 32.5,
-      "skills_required": ["React", "Node", "SQL", "Docker", "Algorithms"],
+      "skills_required": [
+        "React",
+        "Node",
+        "SQL",
+        "Docker",
+        "Algorithms"
+      ],
       "location": "Bangalore (Hybrid)",
       "created_at": "2026-07-18T10:00:00.000Z"
     },
@@ -733,7 +739,13 @@
       "role": "Frontend Developer",
       "description": "Develop premium dashboard portals for Azure management workflows. Expertise in web fundamentals and single page application architecture is a must.",
       "package_lpa": 24,
-      "skills_required": ["HTML", "React", "TypeScript", "CSS", "Tailwind"],
+      "skills_required": [
+        "HTML",
+        "React",
+        "TypeScript",
+        "CSS",
+        "Tailwind"
+      ],
       "location": "Hyderabad",
       "created_at": "2026-07-18T10:00:00.000Z"
     },
@@ -743,7 +755,13 @@
       "role": "DevOps Engineer",
       "description": "Scale CI/CD pipelines, container orchestration topologies, and maintain high availability parameters across AWS regions.",
       "package_lpa": 28,
-      "skills_required": ["Docker", "Kubernetes", "AWS", "Git", "Node"],
+      "skills_required": [
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "Git",
+        "Node"
+      ],
       "location": "Chennai (Remote)",
       "created_at": "2026-07-18T10:00:00.000Z"
     }
