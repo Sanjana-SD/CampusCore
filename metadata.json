@@ -1,0 +1,6 @@
+{
+  "name": "CampusCore",
+  "description": "An integrated smart campus platform with AI mentorship, RFID attendance, placement analytics, and real-time notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
