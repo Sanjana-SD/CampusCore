@@ -1,487 +1,490 @@
 {
   "users": [
     {
-      "id": "45d510e0-3722-4fe7-9aea-bfd95bba3326",
+      "id": "5f441220-3005-47ea-b675-c7a423ae6026",
       "username": "admin",
-      "password_hash": "$2a$10$0iirkm5Rtd3JxXSK7166mOfaSnrMX.N/qDVH9B.ibC2eAgb/44QOq",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "admin",
-      "created_at": "2026-07-17T19:09:39.267Z"
+      "created_at": "2026-08-12T11:17:09.221Z"
     },
     {
-      "id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
+      "id": "63509d86-67de-4502-a5bd-9946c8472b10",
       "username": "faculty1",
-      "password_hash": "$2a$10$F446Llm9gfJmAEbc/iNxhuj5slASYfGIZCWFIZWQbdLa9QXVS6Qmu",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "faculty",
-      "created_at": "2026-07-17T19:09:39.270Z"
+      "created_at": "2026-08-12T11:17:09.223Z"
     },
     {
-      "id": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1",
+      "id": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86",
       "username": "faculty2",
-      "password_hash": "$2a$10$NkL2YFsmRk9F309xOjtEVuSdyIhylo7YfPjyIlanp0KS/6PkZOQMe",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "faculty",
-      "created_at": "2026-07-17T19:09:39.271Z"
+      "created_at": "2026-08-12T11:17:09.225Z"
     },
     {
-      "id": "5cfba41f-5988-4169-acac-6ca9cc929c1c",
+      "id": "6b0e470d-d47a-4b7d-a29b-7c12f4308a60",
       "username": "librarian",
-      "password_hash": "$2a$10$BIt/eLABZ07BM/gjk8iJZuUzG4zF5cx6iJsRyQC.wepXnn4h42Q6C",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "librarian",
-      "created_at": "2026-07-17T19:09:39.274Z"
+      "created_at": "2026-08-12T11:17:09.227Z"
     },
     {
-      "id": "9cb81411-8528-4b6d-8785-ec2908a82f32",
+      "id": "c64d4747-6d7c-4606-9f84-4680b9bc34f8",
       "username": "parent1",
-      "password_hash": "$2a$10$xX.5aLX.RMqQ/A5Ev0cXJOXicRHHCBQDqUcrilUWmRON./M0Mur/S",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "parent",
-      "created_at": "2026-07-17T19:09:39.279Z"
+      "created_at": "2026-08-12T11:17:09.229Z"
     },
     {
-      "id": "1dcb0438-8b2e-4a5f-8619-b84182c1e201",
+      "id": "11760283-5cc7-4517-9140-19bf3e44bca9",
       "username": "parent2",
-      "password_hash": "$2a$10$q1pWQNCTWpv5ZZgS5mMwmOP9bFEoCqrbdLUakupb39YKqI1zVdD6m",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "parent",
-      "created_at": "2026-07-17T19:09:39.281Z"
+      "created_at": "2026-08-12T11:17:09.230Z"
     },
     {
-      "id": "7a8e26de-f630-43a2-a3e8-f17657d18dc7",
+      "id": "5076b6ee-3f67-4a02-93ee-1f81f525394a",
       "username": "student1",
-      "password_hash": "$2a$10$QovBm0TGuw/wZAqsimgEXuxmjuK7UicfzQwJ4QW6SRHN8d7GDbXeC",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.283Z"
+      "created_at": "2026-08-12T11:17:09.232Z"
     },
     {
-      "id": "8e1af832-d4e2-439a-a304-d8f1278273cf",
+      "id": "8745aec2-e885-4588-ab26-af5c3ccdf446",
       "username": "student2",
-      "password_hash": "$2a$10$uDujqpy0AyZ03shjIYzdtuA8g7VW9lKpGY1YAE64IuOSHjuYJAWqa",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.284Z"
+      "created_at": "2026-08-12T11:17:09.233Z"
     },
     {
-      "id": "fad34015-ce7a-4d4b-b7ac-e8f390be5e11",
+      "id": "2b8bbf49-073f-49cf-b24e-73a9ae538916",
       "username": "classrep1",
-      "password_hash": "$2a$10$SFILyibYNxnZAz/dThfGY.G1SdkPcGHYtaus5lgP6eEbpoMjb.ODG",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "class_rep",
-      "created_at": "2026-07-17T19:09:39.286Z"
+      "created_at": "2026-08-12T11:17:09.235Z"
     },
     {
-      "id": "420126e7-2e41-4b7d-94fb-4da915b20593",
+      "id": "0cd574a9-93ea-405d-89ca-b0ede4053478",
       "username": "student4",
-      "password_hash": "$2a$10$xHBmlV0RP7b5ueX4CxZCsezu5Ai/UVhQERefqrLPC1oNyswu9KPYy",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.288Z"
+      "created_at": "2026-08-12T11:17:09.237Z"
     },
     {
-      "id": "17f414b1-c3b3-46de-b573-917257bfce01",
+      "id": "2f8a64a6-2ee8-43f0-9b0e-da759575dddb",
       "username": "student5",
-      "password_hash": "$2a$10$E8EVIvDz/UGVHU5CGx2Ha.FlzLU0SDeJgRiwUQSOesMPSiE7tcf56",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.289Z"
+      "created_at": "2026-08-12T11:17:09.239Z"
     },
     {
-      "id": "2870ae7f-b143-4d43-ad68-99d74f8a4e87",
+      "id": "fae77555-59b9-4cc5-88c3-94f0f3391fb1",
       "username": "student6",
-      "password_hash": "$2a$10$JfQy7rD.CUFGV88kdeq7QuJkTHmN3oSBniilWRRsQe7ZmBYmIMAIW",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.291Z"
+      "created_at": "2026-08-12T11:17:09.240Z"
     },
     {
-      "id": "0a01b1d0-14d3-412e-a3c7-fce742d5d7e2",
+      "id": "9048ab6e-358a-4811-ab95-42b850b3c060",
       "username": "student7",
-      "password_hash": "$2a$10$lKZxE9kdYR6novZrdEcbeOkII89zZkGyolspgT.WtOWYIGkB9NKkC",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.297Z"
+      "created_at": "2026-08-12T11:17:09.241Z"
     },
     {
-      "id": "56bebcec-3506-4aa0-b105-d2e4f4f34b81",
+      "id": "73f97ff5-030e-4b54-aea3-aed725c69ab3",
       "username": "student8",
-      "password_hash": "$2a$10$jecrHpleubRrmD2ExlBwx.OvakEjZ3DLC87ZZb7Z./xV263CjVbOe",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.299Z"
+      "created_at": "2026-08-12T11:17:09.243Z"
     },
     {
-      "id": "c8629e08-bbc9-435e-992a-29cdc7252a33",
+      "id": "794fec71-8312-4543-8837-4ee8d151a4f4",
       "username": "student9",
-      "password_hash": "$2a$10$kGR7Uuc5kF5GWCXnaStniO5eZP9b7iMC8pBLSKOrcCcc4ZPA3YNDS",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.301Z"
+      "created_at": "2026-08-12T11:17:09.245Z"
     },
     {
-      "id": "57a6ea58-5bc9-43ef-a474-0ccc8ffbdc61",
+      "id": "e56935d6-baf2-43a7-84ae-0fcde8f64f27",
       "username": "student10",
-      "password_hash": "$2a$10$1R0.T42uPMAF9dGwLtZEleIUzMCA5N5yN7i5jqIRUrsrunRwmxcVu",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.302Z"
+      "created_at": "2026-08-12T11:17:09.246Z"
     },
     {
-      "id": "23f6f525-6b82-44cb-a2e0-ff7459ba9c06",
+      "id": "8c596275-445f-4c43-ae4d-3a36bc2c661f",
       "username": "student11",
-      "password_hash": "$2a$10$GTHD0sRjKXYYzE1g08NAbuI9yj7MMF8MR1x7hcG8SZMltDR7g5/Eu",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.304Z"
+      "created_at": "2026-08-12T11:17:09.247Z"
     },
     {
-      "id": "2837ed78-67c4-4e63-b703-aae2c3756a29",
+      "id": "f476882c-e9ad-47d9-bded-b22b68986550",
       "username": "student12",
-      "password_hash": "$2a$10$4Suf1LBi0HbnCOFuH49cMOs4Hp.CYhp8wggVsCnBK/3YlmH760kRi",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.306Z"
+      "created_at": "2026-08-12T11:17:09.248Z"
     },
     {
-      "id": "9bf160af-39f1-4c14-a377-fd71c627d232",
+      "id": "e5da96ad-ef38-4914-8f05-c7d9ac0d8bcd",
       "username": "student13",
-      "password_hash": "$2a$10$UtyR3ftC.BeXiS7g8C0t0.B2Y8fEUlmnfW.n.SJhOn2CZ0ejoR9dO",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.308Z"
+      "created_at": "2026-08-12T11:17:09.250Z"
     },
     {
-      "id": "dd613bc7-7293-4916-a5b3-2d72553d3278",
+      "id": "eb3b4a1f-3b0e-4eb6-ad92-2be49f0cac0a",
       "username": "student14",
-      "password_hash": "$2a$10$YBvM3/KNMdlz20AQNBXA.OuB4MhVyqwuv2IQP89QQpiSPl.3jC8PK",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.313Z"
+      "created_at": "2026-08-12T11:17:09.252Z"
     },
     {
-      "id": "eae7eb63-33d5-4bde-b550-201ffe33737a",
+      "id": "30926f6c-ea4a-42e9-8f18-6c9fc112c71d",
       "username": "student15",
-      "password_hash": "$2a$10$ztxUqT0gVSJSFY3cHMX7seoyNCb6.35TiriHHzwJu5iyy.mqgx7CG",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.314Z"
+      "created_at": "2026-08-12T11:17:09.253Z"
     },
     {
-      "id": "860729ab-2a37-4f83-87a5-e5ef14817b55",
+      "id": "f6a56890-bd5b-4df4-bae0-1edb1b2ed20e",
       "username": "student16",
-      "password_hash": "$2a$10$M3kF4XDtSLJ3m1hmseZDfu5udUZ68Yxv5ag5VAdTz68SLqWoRacdW",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.316Z"
+      "created_at": "2026-08-12T11:17:09.255Z"
     },
     {
-      "id": "cacb7c40-07fd-44ae-9d78-1cf1563d14c4",
+      "id": "c0cb0a09-277d-4422-aa75-76e4a7e8f65c",
       "username": "student17",
-      "password_hash": "$2a$10$lxjuMwfVIkSGUBd3OuD.9eHJWqPe5jZEv/l7InP6hxPi1.YpMTF6W",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.318Z"
+      "created_at": "2026-08-12T11:17:09.256Z"
     },
     {
-      "id": "94690220-ce9e-4ef4-b5f4-1e1a965b4f8b",
+      "id": "c2af3c8d-18de-4db5-b94b-9aa0b351d553",
       "username": "student18",
-      "password_hash": "$2a$10$ZIDCQyvEeKQ48LWZ7d0jx.Dnl8zu4mmXw6oYn0m1ID6WU5XY3DRjy",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.321Z"
+      "created_at": "2026-08-12T11:17:09.258Z"
     },
     {
-      "id": "38fe3893-8629-4e4f-a85e-fbcf38a54d19",
+      "id": "4280f8b5-300a-4ed8-84ae-e4e1624d6728",
       "username": "student19",
-      "password_hash": "$2a$10$NeCHxBBjxFcNt8kDwMfYl.utkK.1uDDY94K.FQcwUt2xUIuoTmnTy",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.323Z"
+      "created_at": "2026-08-12T11:17:09.260Z"
     },
     {
-      "id": "d898605e-0c5f-455d-bab4-fc193cf3cb88",
+      "id": "7e2466c2-6263-4984-b576-a710dcd986a9",
       "username": "student20",
-      "password_hash": "$2a$10$EJF28FTcnK5lZzRiWHwJDenawSA95vehtdPWxm7GUSFjWC.hRQiDC",
+      "password_hash": "$2a$10$pPpEQPrdu66SFTztTqjQZuIvRp1nD7MKks9Mf/KQiJilA3glpJymu",
       "role": "student",
-      "created_at": "2026-07-17T19:09:39.325Z"
+      "created_at": "2026-08-12T11:17:09.261Z"
     }
   ],
   "staff": [
     {
-      "id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
+      "id": "63509d86-67de-4502-a5bd-9946c8472b10",
       "first_name": "Yathish Aradhya",
       "last_name": "B C",
       "email": "yathish.aradhya@kit.edu",
       "phone": "9876543210",
-      "department": "Computer Science & Engineering"
+      "department": "Computer Science & Engineering",
+      "created_at": "2026-08-12T11:17:09.263Z"
     },
     {
-      "id": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1",
+      "id": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86",
       "first_name": "Suman",
       "last_name": "K R",
       "email": "suman.kr@kit.edu",
       "phone": "9876543211",
-      "department": "Computer Science & Engineering"
+      "department": "Computer Science & Engineering",
+      "created_at": "2026-08-12T11:17:09.263Z"
     },
     {
-      "id": "5cfba41f-5988-4169-acac-6ca9cc929c1c",
+      "id": "6b0e470d-d47a-4b7d-a29b-7c12f4308a60",
       "first_name": "Anila",
       "last_name": "Kumara",
       "email": "anila.kumara@kit.edu",
       "phone": "9876543212",
-      "department": "Library Science"
+      "department": "Library Science",
+      "created_at": "2026-08-12T11:17:09.263Z"
     }
   ],
   "classes": [
     {
-      "id": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
-      "name": "2683f0d4-bca5-4670-a0c1-893a6a0ec322"
+      "id": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
+      "name": "63509d86-67de-4502-a5bd-9946c8472b10"
     },
     {
-      "id": "5d603106-4016-401f-b3bc-47708b8cba24",
-      "name": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1"
+      "id": "fd4fa748-e2ab-440e-962d-89eaf9459455",
+      "name": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86"
     }
   ],
   "students": [
     {
-      "id": "7a8e26de-f630-43a2-a3e8-f17657d18dc7",
-      "rfid_uid": "9cb81411-8528-4b6d-8785-ec2908a82f32",
-      "first_name": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
+      "id": "5076b6ee-3f67-4a02-93ee-1f81f525394a",
+      "rfid_uid": "c64d4747-6d7c-4606-9f84-4680b9bc34f8",
+      "first_name": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.337Z"
+      "created_at": "2026-08-12T11:17:09.267Z"
     },
     {
-      "id": "8e1af832-d4e2-439a-a304-d8f1278273cf",
-      "rfid_uid": "1dcb0438-8b2e-4a5f-8619-b84182c1e201",
-      "first_name": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
+      "id": "8745aec2-e885-4588-ab26-af5c3ccdf446",
+      "rfid_uid": "11760283-5cc7-4517-9140-19bf3e44bca9",
+      "first_name": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.338Z"
+      "created_at": "2026-08-12T11:17:09.269Z"
     },
     {
-      "id": "fad34015-ce7a-4d4b-b7ac-e8f390be5e11",
-      "rfid_uid": "9cb81411-8528-4b6d-8785-ec2908a82f32",
-      "first_name": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
+      "id": "2b8bbf49-073f-49cf-b24e-73a9ae538916",
+      "rfid_uid": "c64d4747-6d7c-4606-9f84-4680b9bc34f8",
+      "first_name": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.340Z"
+      "created_at": "2026-08-12T11:17:09.271Z"
     },
     {
-      "id": "420126e7-2e41-4b7d-94fb-4da915b20593",
+      "id": "0cd574a9-93ea-405d-89ca-b0ede4053478",
       "rfid_uid": "RFID_STD_04",
       "first_name": "Sanjana",
       "last_name": "S D",
       "email": "sanjana.sd@student.kit.edu",
-      "phone": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
+      "phone": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.342Z"
+      "created_at": "2026-08-12T11:17:09.273Z"
     },
     {
-      "id": "17f414b1-c3b3-46de-b573-917257bfce01",
+      "id": "2f8a64a6-2ee8-43f0-9b0e-da759575dddb",
       "rfid_uid": "RFID_STD_05",
       "first_name": "Amit",
       "last_name": "Kumar",
       "email": "amit.kumar@student.kit.edu",
-      "phone": "5d603106-4016-401f-b3bc-47708b8cba24",
+      "phone": "fd4fa748-e2ab-440e-962d-89eaf9459455",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.348Z"
+      "created_at": "2026-08-12T11:17:09.275Z"
     },
     {
-      "id": "2870ae7f-b143-4d43-ad68-99d74f8a4e87",
+      "id": "fae77555-59b9-4cc5-88c3-94f0f3391fb1",
       "rfid_uid": "RFID_STD_06",
       "first_name": "Priya",
       "last_name": "Rao",
       "email": "priya.rao@student.kit.edu",
-      "phone": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
+      "phone": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.350Z"
+      "created_at": "2026-08-12T11:17:09.276Z"
     },
     {
-      "id": "0a01b1d0-14d3-412e-a3c7-fce742d5d7e2",
+      "id": "9048ab6e-358a-4811-ab95-42b850b3c060",
       "rfid_uid": "RFID_STD_07",
       "first_name": "Karan",
       "last_name": "Singh",
       "email": "karan.singh@student.kit.edu",
-      "phone": "5d603106-4016-401f-b3bc-47708b8cba24",
+      "phone": "fd4fa748-e2ab-440e-962d-89eaf9459455",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.352Z"
+      "created_at": "2026-08-12T11:17:09.277Z"
     },
     {
-      "id": "56bebcec-3506-4aa0-b105-d2e4f4f34b81",
+      "id": "73f97ff5-030e-4b54-aea3-aed725c69ab3",
       "rfid_uid": "RFID_STD_08",
       "first_name": "Anjali",
       "last_name": "Sharma",
       "email": "anjali.sharma@student.kit.edu",
-      "phone": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
+      "phone": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.355Z"
+      "created_at": "2026-08-12T11:17:09.278Z"
     },
     {
-      "id": "c8629e08-bbc9-435e-992a-29cdc7252a33",
+      "id": "794fec71-8312-4543-8837-4ee8d151a4f4",
       "rfid_uid": "RFID_STD_09",
       "first_name": "Deepak",
       "last_name": "Patel",
       "email": "deepak.patel@student.kit.edu",
-      "phone": "5d603106-4016-401f-b3bc-47708b8cba24",
+      "phone": "fd4fa748-e2ab-440e-962d-89eaf9459455",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.357Z"
+      "created_at": "2026-08-12T11:17:09.279Z"
     },
     {
-      "id": "57a6ea58-5bc9-43ef-a474-0ccc8ffbdc61",
+      "id": "e56935d6-baf2-43a7-84ae-0fcde8f64f27",
       "rfid_uid": "RFID_STD_10",
       "first_name": "Sneha",
       "last_name": "Nair",
       "email": "sneha.nair@student.kit.edu",
-      "phone": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
+      "phone": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.358Z"
+      "created_at": "2026-08-12T11:17:09.281Z"
     },
     {
-      "id": "23f6f525-6b82-44cb-a2e0-ff7459ba9c06",
+      "id": "8c596275-445f-4c43-ae4d-3a36bc2c661f",
       "rfid_uid": "RFID_STD_11",
       "first_name": "Rahul",
       "last_name": "Verma",
       "email": "rahul.verma@student.kit.edu",
-      "phone": "5d603106-4016-401f-b3bc-47708b8cba24",
+      "phone": "fd4fa748-e2ab-440e-962d-89eaf9459455",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.364Z"
+      "created_at": "2026-08-12T11:17:09.282Z"
     },
     {
-      "id": "2837ed78-67c4-4e63-b703-aae2c3756a29",
+      "id": "f476882c-e9ad-47d9-bded-b22b68986550",
       "rfid_uid": "RFID_STD_12",
       "first_name": "Neha",
       "last_name": "Gupta",
       "email": "neha.gupta@student.kit.edu",
-      "phone": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
+      "phone": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.367Z"
+      "created_at": "2026-08-12T11:17:09.284Z"
     },
     {
-      "id": "9bf160af-39f1-4c14-a377-fd71c627d232",
+      "id": "e5da96ad-ef38-4914-8f05-c7d9ac0d8bcd",
       "rfid_uid": "RFID_STD_13",
       "first_name": "Vijay",
       "last_name": "Joshi",
       "email": "vijay.joshi@student.kit.edu",
-      "phone": "5d603106-4016-401f-b3bc-47708b8cba24",
+      "phone": "fd4fa748-e2ab-440e-962d-89eaf9459455",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.369Z"
+      "created_at": "2026-08-12T11:17:09.287Z"
     },
     {
-      "id": "dd613bc7-7293-4916-a5b3-2d72553d3278",
+      "id": "eb3b4a1f-3b0e-4eb6-ad92-2be49f0cac0a",
       "rfid_uid": "RFID_STD_14",
       "first_name": "Aditi",
       "last_name": "Mishra",
       "email": "aditi.mishra@student.kit.edu",
-      "phone": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
+      "phone": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.372Z"
+      "created_at": "2026-08-12T11:17:09.289Z"
     },
     {
-      "id": "eae7eb63-33d5-4bde-b550-201ffe33737a",
+      "id": "30926f6c-ea4a-42e9-8f18-6c9fc112c71d",
       "rfid_uid": "RFID_STD_15",
       "first_name": "Rohan",
       "last_name": "Das",
       "email": "rohan.das@student.kit.edu",
-      "phone": "5d603106-4016-401f-b3bc-47708b8cba24",
+      "phone": "fd4fa748-e2ab-440e-962d-89eaf9459455",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.374Z"
+      "created_at": "2026-08-12T11:17:09.290Z"
     },
     {
-      "id": "860729ab-2a37-4f83-87a5-e5ef14817b55",
+      "id": "f6a56890-bd5b-4df4-bae0-1edb1b2ed20e",
       "rfid_uid": "RFID_STD_16",
       "first_name": "Divya",
       "last_name": "Reddy",
       "email": "divya.reddy@student.kit.edu",
-      "phone": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
+      "phone": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.379Z"
+      "created_at": "2026-08-12T11:17:09.292Z"
     },
     {
-      "id": "cacb7c40-07fd-44ae-9d78-1cf1563d14c4",
+      "id": "c0cb0a09-277d-4422-aa75-76e4a7e8f65c",
       "rfid_uid": "RFID_STD_17",
       "first_name": "Sanjay",
       "last_name": "Gowda",
       "email": "sanjay.gowda@student.kit.edu",
-      "phone": "5d603106-4016-401f-b3bc-47708b8cba24",
+      "phone": "fd4fa748-e2ab-440e-962d-89eaf9459455",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.382Z"
+      "created_at": "2026-08-12T11:17:09.294Z"
     },
     {
-      "id": "94690220-ce9e-4ef4-b5f4-1e1a965b4f8b",
+      "id": "c2af3c8d-18de-4db5-b94b-9aa0b351d553",
       "rfid_uid": "RFID_STD_18",
       "first_name": "Aishwarya",
       "last_name": "Patil",
       "email": "aishwarya.patil@student.kit.edu",
-      "phone": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
+      "phone": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.384Z"
+      "created_at": "2026-08-12T11:17:09.296Z"
     },
     {
-      "id": "38fe3893-8629-4e4f-a85e-fbcf38a54d19",
+      "id": "4280f8b5-300a-4ed8-84ae-e4e1624d6728",
       "rfid_uid": "RFID_STD_19",
       "first_name": "Abhishek",
       "last_name": "Bhat",
       "email": "abhishek.bhat@student.kit.edu",
-      "phone": "5d603106-4016-401f-b3bc-47708b8cba24",
+      "phone": "fd4fa748-e2ab-440e-962d-89eaf9459455",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.386Z"
+      "created_at": "2026-08-12T11:17:09.297Z"
     },
     {
-      "id": "d898605e-0c5f-455d-bab4-fc193cf3cb88",
+      "id": "7e2466c2-6263-4984-b576-a710dcd986a9",
       "rfid_uid": "RFID_STD_20",
       "first_name": "Meghana",
       "last_name": "Kulkarni",
       "email": "meghana.kulkarni@student.kit.edu",
-      "phone": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
+      "phone": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
       "enrollment_status": "active",
-      "created_at": "2026-07-17T19:09:39.390Z"
+      "created_at": "2026-08-12T11:17:09.299Z"
     }
   ],
   "timetables": [
     {
-      "id": "2aa43af9-f755-4ec1-b655-d024273b4ece",
-      "class_id": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
-      "faculty_id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
+      "id": "84a9e970-3f8f-4e66-8a98-a69a188a87e3",
+      "class_id": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
+      "faculty_id": "63509d86-67de-4502-a5bd-9946c8472b10",
       "subject": 1,
-      "day_of_week": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1"
+      "day_of_week": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86"
     },
     {
-      "id": "3c068c62-b95e-403c-b71b-23606a586c95",
-      "class_id": "5d603106-4016-401f-b3bc-47708b8cba24",
-      "faculty_id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
+      "id": "bc200b8a-8516-4580-87ec-95a4a07bd454",
+      "class_id": "fd4fa748-e2ab-440e-962d-89eaf9459455",
+      "faculty_id": "63509d86-67de-4502-a5bd-9946c8472b10",
       "subject": 1,
-      "day_of_week": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1"
+      "day_of_week": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86"
     },
     {
-      "id": "bb54e3d4-4708-45d8-ae35-01419ce0c920",
-      "class_id": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
-      "faculty_id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
+      "id": "e9b1412d-dcb3-4f90-b5ed-74f32e1b2fb7",
+      "class_id": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
+      "faculty_id": "63509d86-67de-4502-a5bd-9946c8472b10",
       "subject": 2,
-      "day_of_week": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1"
+      "day_of_week": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86"
     },
     {
-      "id": "d8c6bc78-7dd0-4d99-b259-5f1758fe1853",
-      "class_id": "5d603106-4016-401f-b3bc-47708b8cba24",
-      "faculty_id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
+      "id": "9749999d-500e-4759-a86e-8add8c1d2bb3",
+      "class_id": "fd4fa748-e2ab-440e-962d-89eaf9459455",
+      "faculty_id": "63509d86-67de-4502-a5bd-9946c8472b10",
       "subject": 2,
-      "day_of_week": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1"
+      "day_of_week": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86"
     },
     {
-      "id": "145f6959-ad22-40cc-845e-66ad9b4f0107",
-      "class_id": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
-      "faculty_id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
+      "id": "376d2e1b-3476-4211-b9e5-e50a6df7f379",
+      "class_id": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
+      "faculty_id": "63509d86-67de-4502-a5bd-9946c8472b10",
       "subject": 3,
-      "day_of_week": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1"
+      "day_of_week": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86"
     },
     {
-      "id": "0315e3e3-a44b-4cb0-99e2-a67db753d801",
-      "class_id": "5d603106-4016-401f-b3bc-47708b8cba24",
-      "faculty_id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
+      "id": "afa8d17b-f050-49e3-bbd7-374cce0690c3",
+      "class_id": "fd4fa748-e2ab-440e-962d-89eaf9459455",
+      "faculty_id": "63509d86-67de-4502-a5bd-9946c8472b10",
       "subject": 3,
-      "day_of_week": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1"
+      "day_of_week": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86"
     },
     {
-      "id": "bb0d02e2-f852-46ac-bee0-ebe23d8ea463",
-      "class_id": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
-      "faculty_id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
+      "id": "5788264e-ee9e-4deb-83ca-d42445a76125",
+      "class_id": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
+      "faculty_id": "63509d86-67de-4502-a5bd-9946c8472b10",
       "subject": 4,
-      "day_of_week": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1"
+      "day_of_week": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86"
     },
     {
-      "id": "597b4c85-9ce4-4163-b270-b33afa988c92",
-      "class_id": "5d603106-4016-401f-b3bc-47708b8cba24",
-      "faculty_id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
+      "id": "73aca4f1-05a4-40c5-86d6-53f5c2dd81fb",
+      "class_id": "fd4fa748-e2ab-440e-962d-89eaf9459455",
+      "faculty_id": "63509d86-67de-4502-a5bd-9946c8472b10",
       "subject": 4,
-      "day_of_week": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1"
+      "day_of_week": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86"
     },
     {
-      "id": "d023dffa-06ff-4cdf-b782-cd51a3e678ed",
-      "class_id": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
-      "faculty_id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
+      "id": "b2072b25-488e-4319-a60e-5d506a2edb8d",
+      "class_id": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
+      "faculty_id": "63509d86-67de-4502-a5bd-9946c8472b10",
       "subject": 5,
-      "day_of_week": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1"
+      "day_of_week": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86"
     },
     {
-      "id": "4e1749e1-6490-46cc-b4f0-8ce971bd578d",
-      "class_id": "5d603106-4016-401f-b3bc-47708b8cba24",
-      "faculty_id": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
+      "id": "422f0152-d466-4f44-ac38-986dd5215eef",
+      "class_id": "fd4fa748-e2ab-440e-962d-89eaf9459455",
+      "faculty_id": "63509d86-67de-4502-a5bd-9946c8472b10",
       "subject": 5,
-      "day_of_week": "e444b0e6-4c95-4166-acc1-0ce1f76c69b1"
+      "day_of_week": "481fd5f9-8cd2-4322-a2a9-3909b02e4c86"
     }
   ],
   "attendance_events": [],
@@ -491,26 +494,26 @@
   "assessment_grades": [],
   "class_feeds": [
     {
-      "id": "d677c687-593f-4366-b702-2c09e36aee97",
-      "class_id": "45d510e0-3722-4fe7-9aea-bfd95bba3326",
-      "title": "b8143743-03b2-4542-9b6a-4d59cb904fe5",
-      "content": "2683f0d4-bca5-4670-a0c1-893a6a0ec322",
-      "created_at": "2026-07-17T19:09:39.430Z"
+      "id": "89431b6d-3d5f-4a43-9480-2597ec708309",
+      "class_id": "5f441220-3005-47ea-b675-c7a423ae6026",
+      "title": "148f2be1-9f85-4516-88b3-2d0a2bf4b126",
+      "content": "63509d86-67de-4502-a5bd-9946c8472b10",
+      "created_at": "2026-08-12T11:17:09.330Z"
     }
   ],
   "books": [
     {
-      "id": "b6b71be7-4e83-4963-bafc-2f69f2db8315",
+      "id": "b5c7f8d1-06ae-47e1-abed-8525fe448e9b",
       "status": "available"
     }
   ],
   "library_loans": [],
   "fee_status": [
     {
-      "id": "58a87059-1d6f-44f8-9c1e-36dbba2101d8",
-      "student_id": "7a8e26de-f630-43a2-a3e8-f17657d18dc7",
-      "term": "8e1af832-d4e2-439a-a304-d8f1278273cf",
-      "amount_due": "fad34015-ce7a-4d4b-b7ac-e8f390be5e11",
+      "id": "d6ef540b-71fc-409d-984a-3375bc5093ca",
+      "student_id": "5076b6ee-3f67-4a02-93ee-1f81f525394a",
+      "term": "8745aec2-e885-4588-ab26-af5c3ccdf446",
+      "amount_due": "2b8bbf49-073f-49cf-b24e-73a9ae538916",
       "status": "unpaid"
     }
   ],
@@ -520,7 +523,9 @@
       "late_cutoff_time": "09:15:00",
       "absenteeism_threshold": 75,
       "parent_notification_time": "09:30:00",
-      "email_from_address": "noreply@campuscore.edu"
+      "resend_api_key": null,
+      "email_from_address": "noreply@campuscore.edu",
+      "google_sheet_url": null
     }
   ],
   "audit_log": [
@@ -532,181 +537,13 @@
       },
       "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
       "row_hash": "86b6b2571522bd6818aab7be0b50d9b0eeaad1fc2b8daaa5d805981d2f01a79c",
-      "created_at": "2026-07-17T19:09:39.258Z"
+      "created_at": "2026-08-12T11:17:09.218Z"
     }
   ],
-  "departments": [
-    {
-      "id": "dept-cse-uuid-1111",
-      "name": "Computer Science & Engineering",
-      "code": "CSE",
-      "head_of_dept": "Dr. Yathish Aradhya",
-      "description": "Department focusing on software, ML, cyber security, and networking."
-    },
-    {
-      "id": "dept-ise-uuid-2222",
-      "name": "Information Science & Engineering",
-      "code": "ISE",
-      "head_of_dept": "Dr. Suman K R",
-      "description": "Department focusing on information systems, databases, cloud computing, and big data."
-    },
-    {
-      "id": "dept-ece-uuid-3333",
-      "name": "Electronics & Communication",
-      "code": "ECE",
-      "head_of_dept": "Prof. Rajesh Kumar",
-      "description": "Department focusing on embedded systems, IoT, signal processing, and VLSI."
-    },
-    {
-      "id": "dept-me-uuid-4444",
-      "name": "Mechanical Engineering",
-      "code": "ME",
-      "head_of_dept": "Dr. Suresh M",
-      "description": "Department focusing on thermodynamics, manufacturing, robotics, and design."
-    }
-  ],
-  "courses": [
-    {
-      "id": "c1",
-      "department_id": "dept-cse-uuid-1111",
-      "name": "B.E. in Computer Science & Engineering",
-      "code": "BE-CSE",
-      "degree": "BE",
-      "credits": 160,
-      "duration_years": 4,
-      "description": "Core computer science theory, algorithms, software development, and modern technologies."
-    },
-    {
-      "id": "c2",
-      "department_id": "dept-ise-uuid-2222",
-      "name": "B.E. in Information Science & Engineering",
-      "code": "BE-ISE",
-      "degree": "BE",
-      "credits": 160,
-      "duration_years": 4,
-      "description": "Focus on databases, web architectures, information security, and cloud technologies."
-    },
-    {
-      "id": "c3",
-      "department_id": "dept-ece-uuid-3333",
-      "name": "B.E. in Electronics & Communication Engineering",
-      "code": "BE-ECE",
-      "degree": "BE",
-      "credits": 160,
-      "duration_years": 4,
-      "description": "Circuits, communication principles, signal processing, and microcontroller design."
-    },
-    {
-      "id": "c4",
-      "department_id": "dept-cse-uuid-1111",
-      "name": "M.Tech in Software Engineering",
-      "code": "MTECH-SE",
-      "degree": "MTech",
-      "credits": 80,
-      "duration_years": 2,
-      "description": "Advanced software engineering practices, project architecture, and systems design."
-    },
-    {
-      "id": "c5",
-      "department_id": "dept-ise-uuid-2222",
-      "name": "M.B.A. in Business Analytics",
-      "code": "MBA-BA",
-      "degree": "MBA",
-      "credits": 90,
-      "duration_years": 2,
-      "description": "Business management combined with data-driven decision making and statistical methods."
-    }
-  ],
-  "events": [
-    {
-      "id": "e1",
-      "title": "National Hackathon 2026",
-      "description": "Join us for a 36-hour nationwide coding challenge focusing on Smart City solutions. Winners get up to ₹1,00,000 cash prizes and incubation opportunities.",
-      "event_date": "2026-06-15T09:00:00.000Z",
-      "location": "Main Campus Seminar Hall & Labs",
-      "image_url": ""
-    },
-    {
-      "id": "e2",
-      "title": "AI/ML Guest Lecture by Google DeepMind",
-      "description": "We are hosting a guest lecture on Generative AI Models, Transformer architectures, and the future of agentic AI. Open to all branches.",
-      "event_date": "2026-07-22T14:30:00.000Z",
-      "location": "Dr. A P J Abdul Kalam Auditorium",
-      "image_url": ""
-    },
-    {
-      "id": "e3",
-      "title": "Annual Cultural Fest — Spandana 2026",
-      "description": "The biggest event of the year is here! Three days of non-stop music, dance, fashion show, theatre, and delicious food stalls. Mark your calendars!",
-      "event_date": "2026-08-05T10:00:00.000Z",
-      "location": "Campus Main Grounds",
-      "image_url": ""
-    },
-    {
-      "id": "e4",
-      "title": "Mega Campus Placement Drive 2026",
-      "description": "Over 45+ premier recruiters (including Google, Microsoft, Amazon, Adobe) will be visiting campus to recruit students for engineering and business positions.",
-      "event_date": "2026-09-12T08:30:00.000Z",
-      "location": "Placement Block & Seminar Halls",
-      "image_url": ""
-    }
-  ],
-  "placements": [
-    {
-      "id": "p1",
-      "student_name": "Mohammed Taha Shariff",
-      "department_id": "dept-cse-uuid-1111",
-      "company_name": "Google",
-      "package_lpa": 32.5,
-      "placed_year": 2026,
-      "job_role": "Software Engineer"
-    },
-    {
-      "id": "p2",
-      "student_name": "Nafisa Syed",
-      "department_id": "dept-cse-uuid-1111",
-      "company_name": "Microsoft",
-      "package_lpa": 28,
-      "placed_year": 2026,
-      "job_role": "Software Engineer"
-    },
-    {
-      "id": "p3",
-      "student_name": "Naushin Taj",
-      "department_id": "dept-cse-uuid-1111",
-      "company_name": "Amazon",
-      "package_lpa": 24,
-      "placed_year": 2026,
-      "job_role": "Backend Developer"
-    },
-    {
-      "id": "p4",
-      "student_name": "Sanjana S D",
-      "department_id": "dept-cse-uuid-1111",
-      "company_name": "Adobe",
-      "package_lpa": 22,
-      "placed_year": 2025,
-      "job_role": "Product Engineer"
-    },
-    {
-      "id": "p5",
-      "student_name": "Amit Kumar",
-      "department_id": "dept-ise-uuid-2222",
-      "company_name": "Infosys",
-      "package_lpa": 8.5,
-      "placed_year": 2025,
-      "job_role": "Systems Engineer"
-    },
-    {
-      "id": "p6",
-      "student_name": "Priya Rao",
-      "department_id": "dept-ece-uuid-3333",
-      "company_name": "Qualcomm",
-      "package_lpa": 18,
-      "placed_year": 2026,
-      "job_role": "Hardware Design Engineer"
-    }
-  ],
+  "departments": [],
+  "courses": [],
+  "events": [],
+  "placements": [],
   "login": [],
   "c360_users": [],
   "c360_quiz_scores": [],
@@ -716,55 +553,6 @@
   "c360_roadmap": [],
   "c360_progress": [],
   "c360_admin_logs": [],
-  "c360_jobs": [
-    {
-      "id": "job-1",
-      "company_name": "Google",
-      "role": "Software Engineer Intern",
-      "description": "Join Google's Core Infrastructure engineering team. You will build highly scalable REST microservices and integrate real-time RPC channels.",
-      "package_lpa": 32.5,
-      "skills_required": [
-        "React",
-        "Node",
-        "SQL",
-        "Docker",
-        "Algorithms"
-      ],
-      "location": "Bangalore (Hybrid)",
-      "created_at": "2026-07-18T10:00:00.000Z"
-    },
-    {
-      "id": "job-2",
-      "company_name": "Microsoft",
-      "role": "Frontend Developer",
-      "description": "Develop premium dashboard portals for Azure management workflows. Expertise in web fundamentals and single page application architecture is a must.",
-      "package_lpa": 24,
-      "skills_required": [
-        "HTML",
-        "React",
-        "TypeScript",
-        "CSS",
-        "Tailwind"
-      ],
-      "location": "Hyderabad",
-      "created_at": "2026-07-18T10:00:00.000Z"
-    },
-    {
-      "id": "job-3",
-      "company_name": "Amazon",
-      "role": "DevOps Engineer",
-      "description": "Scale CI/CD pipelines, container orchestration topologies, and maintain high availability parameters across AWS regions.",
-      "package_lpa": 28,
-      "skills_required": [
-        "Docker",
-        "Kubernetes",
-        "AWS",
-        "Git",
-        "Node"
-      ],
-      "location": "Chennai (Remote)",
-      "created_at": "2026-07-18T10:00:00.000Z"
-    }
-  ],
+  "c360_jobs": [],
   "c360_job_applications": []
 }
